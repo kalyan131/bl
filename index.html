@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalyan Chandra | Political Strategist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header.hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.pexels.com/photos/1133773/pexels-photo-1133773.jpeg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header.hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header.hero p {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #f9b233;
+      padding: 12px 30px;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .about img {
+      width: 100%; max-width: 400px; border-radius: 8px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .social a {
+      margin-right: 15px;
+      font-size: 1.5em;
+      color: #005580;
+    }
+    blockquote {
+      font-style: italic;
+      background: url('https://images.pexels.com/photos/34950/pexels-photo.jpg') center/cover no-repeat;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background: #005580;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Kalyan Chandra</h1>
+    <p>Political Strategist | Digital Campaign Consultant</p>
+    <a href="#services" class="btn">View My Work</a>
+  </header>
+
+  <section class="about">
+    <img src="https://images.pexels.com/photos/3775536/pexels-photo-3775536.jpeg" alt="Kalyan Chandra portrait">
+    <div>
+      <h2>About Kalyan</h2>
+      <p>Kalyan Chandra is a renowned political strategist from Hyderabad, India, specializing in Political PR, Media Management, and Booth Management. He has shaped numerous campaigns across South India through tailored digital strategies and field-level election management solutions.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card"><i class="fas fa-vote-yea"></i><h3>Campaign Management</h3><p>Complete election management strategy and execution.</p></div>
+      <div class="card"><i class="fas fa-bullhorn"></i><h3>Digital Strategy</h3><p>Online presence, voter engagement, and media planning.</p></div>
+      <div class="card"><i class="fas fa-users"></i><h3>Booth Management</h3><p>Local grassroots activation and turnout optimization.</p></div>
+      <div class="card"><i class="fas fa-newspaper"></i><h3>Political PR</h3><p>Message crafting and media coordination for outreach.</p></div>
+      <div class="card"><i class="fas fa-chart-line"></i><h3>Analytics</h3><p>Voter research, polls, surveys, and insights.</p></div>
+      <div class="card"><i class="fas fa-hashtag"></i><h3>Social Media</h3><p>Campaigns tailored for digital-native voters.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Let’s Connect</h2>
+    <div class="social">
+      <a href="https://facebook.com/Kalyan.indian" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/kalyan_chandra" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://pinterest.com/Kalyan.indian" target="_blank"><i class="fab fa-pinterest"></i></a>
+      <a href="https://medium.com/@kalyan.indian" target="_blank"><i class="fab fa-medium"></i></a>
+    </div>
+  </section>
+
+  <blockquote>
+    "Kalyan's political instincts, strategy, and ability to adapt to digital trends have transformed campaigns across South India."
+  </blockquote>
+
+  <section>
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p>Email: info@kalyanchandra.com<br>Phone: +91 9618106537</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kalyan Chandra. All rights reserved.</p>
+  </footer>
+</body>
+</html>
