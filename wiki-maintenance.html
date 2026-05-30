@@ -1,161 +1,609 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wikipedia Page Maintenance | Kalyan Chandra</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: #222;
-      background-color: #f9f9f9;
-      line-height: 1.6;
-    }
-    header {
-      background: url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*F4EhHcejnSI3Io6vZTnPbA.png') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    header h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #0056b3;
-    }
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #25d366;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-    .cta {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #eaf6ff;
-    }
-    footer {
-      background: #111;
-      color: #ccc;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9em;
-    }
-    img.full {
-      width: 100%;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wikipedia Page Maintenance Services | Kalyan Chandra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f4f7fb;
+    color:#1b1b1b;
+    line-height:1.7;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background:
+    linear-gradient(rgba(3,14,39,0.92),rgba(3,14,39,0.92)),
+    url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    padding:100px 20px;
+    overflow:hidden;
+}
+
+.hero-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero-left{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-left h1{
+    font-size:58px;
+    line-height:1.1;
+    color:#fff;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.hero-left p{
+    color:#d6deed;
+    font-size:21px;
+    max-width:620px;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#25d366;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:700;
+    transition:0.3s ease;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+    background:#1dbb59;
+}
+
+.hero-right{
+    flex:1;
+    min-width:320px;
+    text-align:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:500px;
+    filter:drop-shadow(0 20px 40px rgba(0,0,0,0.45));
+}
+
+/* MAIN */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin-bottom:14px;
+    color:#0d1b3e;
+}
+
+.section-title p{
+    color:#5f6b85;
+    max-width:700px;
+    margin:auto;
+    font-size:17px;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:24px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.about-content{
+    background:#fff;
+    padding:45px;
+    border-radius:24px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.06);
+}
+
+.about-content h3{
+    font-size:34px;
+    margin-bottom:22px;
+    color:#071633;
+}
+
+.about-content p{
+    color:#5a657c;
+    margin-bottom:18px;
+    font-size:17px;
+}
+
+/* SERVICES */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:28px;
+}
+
+.service-box{
+    background:#fff;
+    border-radius:22px;
+    padding:35px 28px;
+    text-align:center;
+    box-shadow:0 10px 28px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+}
+
+.service-box:hover{
+    transform:translateY(-6px);
+}
+
+.service-icon{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:#eef4ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-bottom:22px;
+    font-size:32px;
+}
+
+.service-box h3{
+    font-size:22px;
+    margin-bottom:14px;
+    color:#10224d;
+}
+
+.service-box p{
+    color:#647089;
+    font-size:15px;
+}
+
+/* FEATURES */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:28px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:34px;
+    border-radius:22px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.05);
+    position:relative;
+    overflow:hidden;
+}
+
+.feature-number{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#0d4ed8;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.feature-box h3{
+    font-size:22px;
+    margin-bottom:15px;
+    color:#10224d;
+}
+
+.feature-box p{
+    color:#5f6b85;
+    font-size:15px;
+}
+
+/* CTA */
+
+.cta{
+    background:
+    linear-gradient(135deg,#03132d,#0a2f66);
+    border-radius:28px;
+    padding:70px 40px;
+    text-align:center;
+    color:#fff;
+    margin-top:20px;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    color:#d5dff5;
+    font-size:18px;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#25d366;
+    color:#fff;
+    padding:17px 38px;
+    text-decoration:none;
+    border-radius:14px;
+    font-weight:700;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#07111f;
+    padding:35px 20px;
+    text-align:center;
+    color:#aeb7ca;
+    margin-top:80px;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero-left h1{
+    font-size:42px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.about-content{
+    padding:35px;
+}
+
+.cta h2{
+    font-size:34px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+    padding:80px 20px;
+}
+
+.hero-left h1{
+    font-size:34px;
+}
+
+.hero-left p{
+    font-size:17px;
+}
+
+.section{
+    padding:65px 18px;
+}
+
+.about-content{
+    padding:28px;
+}
+
+.service-box,
+.feature-box{
+    padding:28px 24px;
+}
+
+.cta{
+    padding:55px 24px;
+}
+
+.cta h2{
+    font-size:28px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-<header>
- <h1>
-  <a href="https://kalyanchandra.com/wikipedia-maintenance-monitoring-service/" style="color: inherit; text-decoration: none;">
-    Wikipedia Page Maintenance Services
-  </a>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div class="hero-left">
+
+<h1>
+Wikipedia Page Maintenance Services
 </h1>
 
-  <p>Professional, Compliant & Monitored — Let Us Manage Your Online Reputation.</p>
-</header>
+<p>
+Professional, compliant, and monitored Wikipedia page management solutions to protect your online reputation and maintain accurate public information.
+</p>
 
-<section>
-  <h2>Why Wikipedia Maintenance Matters</h2>
-  <p>Wikipedia is often the first place people look to learn about you or your brand. However, open editing makes it vulnerable to misinformation, outdated content, and vandalism.</p>
-  <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*tbrXMWFE9IsGeu1X" alt="Wikipedia interface" class="full">
-  <p>We safeguard your presence with expert monitoring, guideline compliance, and timely updates tailored to your region.</p>
-</section>
-<section>
-  <h2>Our Global Services</h2>
-  <ul>
-    <li>Real-time monitoring of page edits</li>
-    <li>Protection from malicious changes</li>
-    <li>Addition of verified achievements</li>
-    <li>Compliance with notability & citation rules</li>
-    <li>Localized services for USA, Singapore, Dubai & more</li>
-  </ul>
-</section>
-<section>
-  <h2>Why Choose Kalyan Chandra?</h2>
-  <p><b>Why Kalyan Chandra Consulting is the Best Wikipedia Maintenance Service</b></p>
+<a href="https://wa.me/919618106537" class="hero-btn">
+📲 Chat on WhatsApp
+</a>
 
-<p>Today, it is important for people and organizations to have a good online presence. Wikipedia is one of the best platforms to manage this. But, editing and maintaining a Wikipedia page is not easy. The rules are strict, and anyone can edit the pages. Kalyan Chandra Consulting helps you with all your Wikipedia needs. Here’s why we are the best:</p>
-
-<p><b>1. We Know Wikipedia’s Rules</b></p>
-<p>Wikipedia has many rules about what you can write and how you must show your sources. If you break these rules, your page can be changed or even deleted. Our team knows all the rules very well. We make sure your page follows every guideline, so it stays safe and correct.</p>
-
-<p><b>2. We Watch Your Page Regularly</b></p>
-<p>Anyone can edit Wikipedia pages. Sometimes, people make changes that are wrong or harmful. We check your page often and fix any problems fast. This keeps your page accurate and protects your reputation.</p>
-
-<p><b>3. We Make Sure Your Content Is Correct</b></p>
-<p>A good Wikipedia page must have true and well-checked information. We do careful research and use only trusted sources. This makes your page reliable and helps it meet Wikipedia’s standards.</p>
-
-<p><b>4. We Create Custom Plans for You</b></p>
-<p>Every client is different. We look at your needs and make a special plan just for you. Whether you are a business, a public figure, or a non-profit, we help your page show your achievements in the best way.</p>
-
-<p><b>5. We Manage Your Reputation</b></p>
-<p>Sometimes, there are arguments or unfair edits on Wikipedia. Our team knows how to handle these situations. We talk to Wikipedia editors and solve problems calmly. We make sure your page is fair and free from bias.</p>
-
-<p><b>6. We Keep You Informed</b></p>
-<p>We believe in being open and honest. We give you regular updates about your page and any changes we make. You will always know what is happening with your Wikipedia page.</p>
-
-<p><b>7. We Have a Skilled and Experienced Team</b></p>
-<p>Our team has many years of experience with Wikipedia. We have helped many clients build and keep strong Wikipedia pages. We know how to handle even the toughest situations.</p>
-
-<p><b>Conclusion</b></p>
-<p>Wikipedia is a powerful platform. Keeping your page in good shape needs skill, care, and attention to detail. Kalyan Chandra Consulting offers all the services you need to keep your Wikipedia page safe, accurate, and up to date. We are committed to your success.</p>
-<p>If you want to improve your Wikipedia presence, contact Kalyan Chandra Consulting. Let us handle the hard work, so you can focus on what you do best.</p>
-
-  <p>We bring years of experience in Wikipedia content management with transparent, ethical, and multilingual support. Whether you’re in the U.S., Asia, or the Middle East — we’ve got you covered.</p>
-</section>
-
-<div class="cta">
-  <h2>Ready to Safeguard Your Wikipedia Page?</h2>
-  <p>Let’s ensure your page stays accurate, updated, and credible.</p>
-  <a class="btn" href="https://wa.me/919618106537" target="_blank">📲 Chat with Us on WhatsApp</a>
-  <br><br>
-  <a href="https://kalyanchandra.com/wikipedia-maintenance-monitoring-service">🔗 Learn More About Our Service</a>
 </div>
 
-<footer>
-  &copy; 2025 Kalyan Chandra | <a href="https://kalyanchandra.com" style="color:#fff;">Visit Our Website</a>
+<div class="hero-right">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Wikipedia Maintenance">
+
+</div>
+
+<div class="about-content">
+
+<h3>Why Wikipedia Maintenance Matters</h3>
+
+<p>
+Wikipedia is often the first place people search to learn about a company, public figure, or organization. Incorrect information, vandalism, or outdated content can affect credibility and trust.
+</p>
+
+<p>
+Our team continuously monitors your Wikipedia page, protects it from harmful edits, and ensures all updates follow Wikipedia’s strict guidelines and sourcing policies.
+</p>
+
+<p>
+We help maintain a professional, accurate, and trustworthy digital presence across global audiences.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>Our Global Services</h2>
+
+<p>
+Complete Wikipedia monitoring and maintenance solutions for businesses, politicians, celebrities, entrepreneurs, and organizations worldwide.
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<div class="service-box">
+<div class="service-icon">📊</div>
+<h3>Real-Time Monitoring</h3>
+<p>
+Continuous tracking of page edits and updates to detect unwanted changes immediately.
+</p>
+</div>
+
+<div class="service-box">
+<div class="service-icon">🛡️</div>
+<h3>Content Protection</h3>
+<p>
+Protection from vandalism, misinformation, and malicious editing activities.
+</p>
+</div>
+
+<div class="service-box">
+<div class="service-icon">✅</div>
+<h3>Verified Updates</h3>
+<p>
+Addition of properly sourced achievements, milestones, and updated information.
+</p>
+</div>
+
+<div class="service-box">
+<div class="service-icon">🌍</div>
+<h3>Global Support</h3>
+<p>
+Localized support services for USA, Singapore, Dubai, India, and other regions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE -->
+
+<section class="section">
+
+<div class="section-title">
+
+<h2>Why Choose Kalyan Chandra?</h2>
+
+<p>
+Experienced Wikipedia management with transparent and ethical maintenance practices.
+</p>
+
+</div>
+
+<div class="features-grid">
+
+<div class="feature-box">
+<div class="feature-number">1</div>
+<h3>Wikipedia Guideline Expertise</h3>
+<p>
+We understand Wikipedia’s editing policies, sourcing standards, and notability guidelines thoroughly.
+</p>
+</div>
+
+<div class="feature-box">
+<div class="feature-number">2</div>
+<h3>Regular Monitoring</h3>
+<p>
+We actively monitor pages and quickly respond to harmful edits or misleading information.
+</p>
+</div>
+
+<div class="feature-box">
+<div class="feature-number">3</div>
+<h3>Reliable Content Management</h3>
+<p>
+All content updates are researched carefully using trusted and verifiable references.
+</p>
+</div>
+
+<div class="feature-box">
+<div class="feature-number">4</div>
+<h3>Customized Strategy</h3>
+<p>
+Every Wikipedia page receives a tailored maintenance strategy based on individual requirements.
+</p>
+</div>
+
+<div class="feature-box">
+<div class="feature-number">5</div>
+<h3>Reputation Protection</h3>
+<p>
+We help handle disputes, unfair edits, and content issues professionally and ethically.
+</p>
+</div>
+
+<div class="feature-box">
+<div class="feature-number">6</div>
+<h3>Transparent Communication</h3>
+<p>
+Regular updates and reporting ensure complete transparency throughout the maintenance process.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="section">
+
+<div class="cta">
+
+<h2>Ready to Safeguard Your Wikipedia Page?</h2>
+
+<p>
+Let us help you maintain an accurate, credible, and professionally managed Wikipedia presence.
+</p>
+
+<a href="https://wa.me/919618106537" class="cta-btn">
+📲 Connect on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<p>
+© 2026 Kalyan Chandra Consulting |
+<a href="https://kalyanchandra.com">
+Visit Website
+</a>
+</p>
+
 </footer>
 
-  <!-- Default Statcounter code for Kalyan Github
-https://kalyan131.github.io/bl/ -->
+<!-- STATCOUNTER CODE -->
+
+<!-- Default Statcounter code for Kalyan Github -->
 <script type="text/javascript">
-var sc_project=13147993; 
-var sc_invisible=1; 
-var sc_security="fa0aacf5"; 
+var sc_project=13147993;
+var sc_invisible=1;
+var sc_security="fa0aacf5";
 </script>
+
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img
-class="statcounter"
+async>
+</script>
+
+<noscript>
+<div class="statcounter">
+<a title="Web Analytics"
+href="https://statcounter.com/"
+target="_blank">
+<img class="statcounter"
 src="https://c.statcounter.com/13147993/0/fa0aacf5/1/"
 alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+referrerPolicy="no-referrer-when-downgrade">
+</a>
+</div>
+</noscript>
+
 <!-- End of Statcounter Code -->
 
 </body>
