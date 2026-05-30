@@ -1,8 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Wikipedia Page Maintenance Services | Kalyan Chandra</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,18 +21,19 @@ body{
     background:#f4f7fb;
     color:#1b1b1b;
     line-height:1.7;
+    overflow-x:hidden;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
     background:
-    linear-gradient(rgba(3,14,39,0.92),rgba(3,14,39,0.92)),
+    linear-gradient(rgba(2,10,28,0.92),rgba(2,10,28,0.92)),
     url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1800&auto=format&fit=crop');
     background-size:cover;
     background-position:center;
-    padding:100px 20px;
-    overflow:hidden;
+    padding:110px 20px;
+    position:relative;
 }
 
 .hero-container{
@@ -46,39 +48,40 @@ body{
 
 .hero-left{
     flex:1;
-    min-width:300px;
+    min-width:320px;
 }
 
 .hero-left h1{
-    font-size:58px;
-    line-height:1.1;
+    font-size:62px;
+    line-height:1.05;
     color:#fff;
     font-weight:800;
-    margin-bottom:25px;
+    margin-bottom:28px;
 }
 
 .hero-left p{
-    color:#d6deed;
-    font-size:21px;
-    max-width:620px;
+    color:#dbe5f7;
+    font-size:22px;
+    max-width:650px;
 }
 
 .hero-btn{
     display:inline-block;
-    margin-top:35px;
+    margin-top:38px;
     background:#25d366;
     color:#fff;
     text-decoration:none;
-    padding:16px 34px;
+    padding:17px 34px;
     border-radius:14px;
-    font-size:17px;
     font-weight:700;
+    font-size:18px;
     transition:0.3s ease;
+    box-shadow:0 10px 30px rgba(37,211,102,0.25);
 }
 
 .hero-btn:hover{
-    transform:translateY(-3px);
-    background:#1dbb59;
+    transform:translateY(-4px);
+    background:#1fb95a;
 }
 
 .hero-right{
@@ -93,30 +96,30 @@ body{
     filter:drop-shadow(0 20px 40px rgba(0,0,0,0.45));
 }
 
-/* MAIN */
+/* GENERAL SECTION */
 
 .section{
     max-width:1200px;
     margin:auto;
-    padding:80px 20px;
+    padding:90px 20px;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:55px;
+    margin-bottom:60px;
 }
 
 .section-title h2{
-    font-size:42px;
-    margin-bottom:14px;
-    color:#0d1b3e;
+    font-size:44px;
+    color:#091a3f;
+    margin-bottom:15px;
 }
 
 .section-title p{
-    color:#5f6b85;
-    max-width:700px;
-    margin:auto;
+    color:#61708a;
     font-size:17px;
+    max-width:760px;
+    margin:auto;
 }
 
 /* ABOUT */
@@ -131,24 +134,25 @@ body{
 .about-image img{
     width:100%;
     border-radius:24px;
-    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    box-shadow:0 14px 40px rgba(0,0,0,0.10);
 }
 
 .about-content{
     background:#fff;
-    padding:45px;
-    border-radius:24px;
-    box-shadow:0 12px 30px rgba(0,0,0,0.06);
+    padding:48px;
+    border-radius:28px;
+    box-shadow:0 12px 40px rgba(0,0,0,0.06);
 }
 
 .about-content h3{
-    font-size:34px;
-    margin-bottom:22px;
-    color:#071633;
+    font-size:38px;
+    line-height:1.2;
+    margin-bottom:24px;
+    color:#0b1736;
 }
 
 .about-content p{
-    color:#5a657c;
+    color:#5d6982;
     margin-bottom:18px;
     font-size:17px;
 }
@@ -157,44 +161,44 @@ body{
 
 .services-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:28px;
 }
 
 .service-box{
     background:#fff;
-    border-radius:22px;
-    padding:35px 28px;
+    padding:38px 28px;
+    border-radius:24px;
     text-align:center;
-    box-shadow:0 10px 28px rgba(0,0,0,0.05);
     transition:0.3s ease;
+    box-shadow:0 10px 35px rgba(0,0,0,0.05);
 }
 
 .service-box:hover{
-    transform:translateY(-6px);
+    transform:translateY(-8px);
 }
 
 .service-icon{
-    width:75px;
-    height:75px;
+    width:82px;
+    height:82px;
     border-radius:50%;
     background:#eef4ff;
     display:flex;
     align-items:center;
     justify-content:center;
+    font-size:36px;
     margin:auto;
-    margin-bottom:22px;
-    font-size:32px;
+    margin-bottom:24px;
 }
 
 .service-box h3{
-    font-size:22px;
-    margin-bottom:14px;
+    font-size:24px;
     color:#10224d;
+    margin-bottom:14px;
 }
 
 .service-box p{
-    color:#647089;
+    color:#66748d;
     font-size:15px;
 }
 
@@ -202,40 +206,44 @@ body{
 
 .features-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:28px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 
 .feature-box{
     background:#fff;
-    padding:34px;
-    border-radius:22px;
-    box-shadow:0 10px 28px rgba(0,0,0,0.05);
-    position:relative;
-    overflow:hidden;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+}
+
+.feature-box:hover{
+    transform:translateY(-6px);
 }
 
 .feature-number{
-    width:48px;
-    height:48px;
+    width:52px;
+    height:52px;
     border-radius:50%;
-    background:#0d4ed8;
+    background:#0b57d0;
     color:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
     font-weight:700;
-    margin-bottom:20px;
+    margin-bottom:22px;
+    font-size:20px;
 }
 
 .feature-box h3{
-    font-size:22px;
-    margin-bottom:15px;
-    color:#10224d;
+    font-size:24px;
+    margin-bottom:14px;
+    color:#0f214b;
 }
 
 .feature-box p{
-    color:#5f6b85;
+    color:#647089;
     font-size:15px;
 }
 
@@ -243,45 +251,51 @@ body{
 
 .cta{
     background:
-    linear-gradient(135deg,#03132d,#0a2f66);
-    border-radius:28px;
-    padding:70px 40px;
+    linear-gradient(135deg,#04142e,#0a3270);
+    padding:75px 35px;
+    border-radius:32px;
     text-align:center;
     color:#fff;
-    margin-top:20px;
+    position:relative;
+    overflow:hidden;
 }
 
 .cta h2{
-    font-size:42px;
+    font-size:46px;
     margin-bottom:18px;
 }
 
 .cta p{
-    max-width:700px;
+    color:#dce6f8;
+    max-width:760px;
     margin:auto;
-    color:#d5dff5;
     font-size:18px;
 }
 
 .cta-btn{
     display:inline-block;
-    margin-top:35px;
+    margin-top:38px;
     background:#25d366;
     color:#fff;
-    padding:17px 38px;
     text-decoration:none;
+    padding:18px 40px;
     border-radius:14px;
-    font-weight:700;
     font-size:18px;
+    font-weight:700;
+    transition:0.3s ease;
+}
+
+.cta-btn:hover{
+    background:#1eb95a;
 }
 
 /* FOOTER */
 
 .footer{
     background:#07111f;
-    padding:35px 20px;
     text-align:center;
-    color:#aeb7ca;
+    padding:38px 20px;
+    color:#b7c1d5;
     margin-top:80px;
 }
 
@@ -292,14 +306,10 @@ body{
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:950px){
 
 .hero-left h1{
-    font-size:42px;
-}
-
-.section-title h2{
-    font-size:34px;
+    font-size:46px;
 }
 
 .about-grid{
@@ -308,6 +318,10 @@ body{
 
 .about-content{
     padding:35px;
+}
+
+.section-title h2{
+    font-size:36px;
 }
 
 .cta h2{
@@ -319,11 +333,11 @@ body{
 @media(max-width:600px){
 
 .hero{
-    padding:80px 20px;
+    padding:85px 18px;
 }
 
 .hero-left h1{
-    font-size:34px;
+    font-size:36px;
 }
 
 .hero-left p{
@@ -331,11 +345,15 @@ body{
 }
 
 .section{
-    padding:65px 18px;
+    padding:70px 18px;
 }
 
 .about-content{
     padding:28px;
+}
+
+.about-content h3{
+    font-size:30px;
 }
 
 .service-box,
@@ -371,18 +389,18 @@ Wikipedia Page Maintenance Services
 </h1>
 
 <p>
-Professional, compliant, and monitored Wikipedia page management solutions to protect your online reputation and maintain accurate public information.
+Professional, compliant, and monitored Wikipedia management solutions to protect your online reputation and maintain accurate public information.
 </p>
 
 <a href="https://wa.me/919618106537" class="hero-btn">
-📲 Chat on WhatsApp
+📲 Chat with Us on WhatsApp
 </a>
 
 </div>
 
 <div class="hero-right">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia Logo">
 
 </div>
 
@@ -398,7 +416,7 @@ Professional, compliant, and monitored Wikipedia page management solutions to pr
 
 <div class="about-image">
 
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Wikipedia Maintenance">
+<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*tbrXMWFE9IsGeu1X" alt="Wikipedia Maintenance">
 
 </div>
 
@@ -407,7 +425,7 @@ Professional, compliant, and monitored Wikipedia page management solutions to pr
 <h3>Why Wikipedia Maintenance Matters</h3>
 
 <p>
-Wikipedia is often the first place people search to learn about a company, public figure, or organization. Incorrect information, vandalism, or outdated content can affect credibility and trust.
+Wikipedia is often the first place people search to learn about a business, public figure, or organization. Incorrect edits, outdated information, and vandalism can affect trust and credibility.
 </p>
 
 <p>
@@ -433,7 +451,7 @@ We help maintain a professional, accurate, and trustworthy digital presence acro
 <h2>Our Global Services</h2>
 
 <p>
-Complete Wikipedia monitoring and maintenance solutions for businesses, politicians, celebrities, entrepreneurs, and organizations worldwide.
+Complete Wikipedia monitoring and maintenance solutions for businesses, politicians, entrepreneurs, celebrities, and organizations worldwide.
 </p>
 
 </div>
@@ -452,7 +470,7 @@ Continuous tracking of page edits and updates to detect unwanted changes immedia
 <div class="service-icon">🛡️</div>
 <h3>Content Protection</h3>
 <p>
-Protection from vandalism, misinformation, and malicious editing activities.
+Protection against misinformation, vandalism, and malicious editing activities.
 </p>
 </div>
 
@@ -468,7 +486,7 @@ Addition of properly sourced achievements, milestones, and updated information.
 <div class="service-icon">🌍</div>
 <h3>Global Support</h3>
 <p>
-Localized support services for USA, Singapore, Dubai, India, and other regions.
+Localized Wikipedia maintenance services for USA, Singapore, Dubai, India, and more.
 </p>
 </div>
 
@@ -485,7 +503,7 @@ Localized support services for USA, Singapore, Dubai, India, and other regions.
 <h2>Why Choose Kalyan Chandra?</h2>
 
 <p>
-Experienced Wikipedia management with transparent and ethical maintenance practices.
+Experienced Wikipedia management with transparent, ethical, and professional maintenance practices.
 </p>
 
 </div>
@@ -494,9 +512,9 @@ Experienced Wikipedia management with transparent and ethical maintenance practi
 
 <div class="feature-box">
 <div class="feature-number">1</div>
-<h3>Wikipedia Guideline Expertise</h3>
+<h3>Wikipedia Rule Expertise</h3>
 <p>
-We understand Wikipedia’s editing policies, sourcing standards, and notability guidelines thoroughly.
+We understand Wikipedia’s editing standards, sourcing requirements, and notability policies thoroughly.
 </p>
 </div>
 
@@ -512,7 +530,7 @@ We actively monitor pages and quickly respond to harmful edits or misleading inf
 <div class="feature-number">3</div>
 <h3>Reliable Content Management</h3>
 <p>
-All content updates are researched carefully using trusted and verifiable references.
+All content updates are carefully researched using trusted and verifiable references.
 </p>
 </div>
 
@@ -520,7 +538,7 @@ All content updates are researched carefully using trusted and verifiable refere
 <div class="feature-number">4</div>
 <h3>Customized Strategy</h3>
 <p>
-Every Wikipedia page receives a tailored maintenance strategy based on individual requirements.
+Every client receives a tailored Wikipedia maintenance strategy based on individual goals.
 </p>
 </div>
 
@@ -528,7 +546,7 @@ Every Wikipedia page receives a tailored maintenance strategy based on individua
 <div class="feature-number">5</div>
 <h3>Reputation Protection</h3>
 <p>
-We help handle disputes, unfair edits, and content issues professionally and ethically.
+We help manage disputes, unfair edits, and content-related issues professionally and ethically.
 </p>
 </div>
 
@@ -550,7 +568,9 @@ Regular updates and reporting ensure complete transparency throughout the mainte
 
 <div class="cta">
 
-<h2>Ready to Safeguard Your Wikipedia Page?</h2>
+<h2>
+Ready to Safeguard Your Wikipedia Page?
+</h2>
 
 <p>
 Let us help you maintain an accurate, credible, and professionally managed Wikipedia presence.
@@ -579,7 +599,6 @@ Visit Website
 
 <!-- STATCOUNTER CODE -->
 
-<!-- Default Statcounter code for Kalyan Github -->
 <script type="text/javascript">
 var sc_project=13147993;
 var sc_invisible=1;
@@ -604,7 +623,7 @@ referrerPolicy="no-referrer-when-downgrade">
 </div>
 </noscript>
 
-<!-- End of Statcounter Code -->
+<!-- END STATCOUNTER -->
 
 </body>
 </html>
