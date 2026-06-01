@@ -5,474 +5,452 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Multi Language Wikipedia Maintenance Services | Kalyan Chandra</title>
+<title>Political Consulting Services in Bangalore Karnataka | Kalyan Chandra Consulting</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="description" content="Kalyan Chandra Consulting provides political consulting services in Bangalore and Karnataka including election campaign management, political PR, digital media campaigns, political surveys, voter outreach, war room management, and ground operations.">
+
+<meta name="keywords" content="Political Consulting Services Bangalore, Political Consulting Karnataka, Election Campaign Management Bangalore, Political PR Karnataka, Political Survey Agency Bangalore, Political Strategy Consulting Karnataka, Political Research Karnataka">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://kalyanchandra.com">
+
+<meta property="og:title" content="Political Consulting Services in Bangalore Karnataka | Kalyan Chandra Consulting">
+<meta property="og:description" content="Professional political consulting services across Bangalore and Karnataka including campaign management, voter outreach, political surveys, digital media, and political PR services.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kalyanchandra.com">
+<meta property="og:image" content="https://kalyanchandra.com/wp-content/uploads/2024/10/election-campaign-management-in-Bangalore-karnataka-1000x1000.webp">
+
+
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#041120;
-    color:#ffffff;
-    overflow-x:hidden;
-    line-height:1.7;
+font-family:Arial, sans-serif;
+background:#ffffff;
+color:#222;
+line-height:1.8;
+overflow-x:hidden;
 }
 
-/* HERO */
+.container{
+width:90%;
+max-width:1250px;
+margin:auto;
+}
+
+a{
+text-decoration:none;
+}
+
+header{
+background:#ffffff;
+border-bottom:1px solid #ececec;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:34px;
+font-weight:800;
+color:#081b48;
+}
+
+.logo span{
+color:#d71920;
+}
+
+.menu{
+display:flex;
+gap:28px;
+}
+
+.menu a{
+color:#111;
+font-size:15px;
+font-weight:600;
+}
 
 .hero{
-    background:
-    linear-gradient(rgba(2,10,28,0.90),rgba(2,10,28,0.92)),
-    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1800&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
-    padding:110px 20px 90px;
-    position:relative;
+padding:90px 0;
+background:linear-gradient(to right,#f5f8ff,#ffffff);
 }
 
-.hero-container{
-    max-width:1250px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:70px;
-    flex-wrap:wrap;
+.hero-grid{
+display:grid;
+grid-template-columns:1.1fr 1fr;
+gap:60px;
+align-items:center;
 }
 
-.hero-left{
-    flex:1;
-    min-width:320px;
+.hero h1{
+font-size:62px;
+line-height:1.05;
+margin-bottom:25px;
+color:#081b48;
 }
 
-.hero-badge{
-    display:inline-block;
-    background:rgba(255,255,255,0.10);
-    border:1px solid rgba(255,255,255,0.10);
-    color:#fff;
-    padding:10px 18px;
-    border-radius:100px;
-    font-size:14px;
-    margin-bottom:25px;
-}
-
-.hero-left h1{
-    font-size:68px;
-    line-height:1.05;
-    margin-bottom:28px;
-    font-weight:900;
-    letter-spacing:-2px;
-}
-
-.hero-left h1 span{
-    color:#4d8dff;
-}
-
-.hero-left p{
-    color:#d8e2f3;
-    font-size:20px;
-    max-width:720px;
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+color:#444;
 }
 
 .hero-buttons{
-    margin-top:40px;
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 }
 
-.primary-btn{
-    background:#1d5eff;
-    color:#fff;
-    padding:18px 34px;
-    text-decoration:none;
-    border-radius:14px;
-    font-weight:700;
-    transition:0.3s ease;
+.btn-primary{
+background:#d71920;
+padding:15px 34px;
+color:#fff;
+font-weight:bold;
+border-radius:8px;
+display:inline-block;
 }
 
-.primary-btn:hover{
-    transform:translateY(-4px);
+.btn-secondary{
+border:2px solid #081b48;
+padding:13px 30px;
+color:#081b48;
+font-weight:bold;
+border-radius:8px;
+display:inline-block;
 }
 
-.secondary-btn{
-    background:transparent;
-    border:1px solid rgba(255,255,255,0.15);
-    color:#fff;
-    padding:18px 34px;
-    text-decoration:none;
-    border-radius:14px;
-    font-weight:700;
+.contact-strip{
+margin-top:25px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
 }
 
-.hero-right{
-    flex:1;
-    min-width:320px;
+.contact-box{
+background:#ffffff;
+padding:14px 20px;
+border-radius:12px;
+box-shadow:0 5px 18px rgba(0,0,0,0.08);
+font-size:15px;
+font-weight:600;
 }
 
-.hero-card{
-    background:rgba(255,255,255,0.06);
-    border-radius:30px;
-    padding:30px;
-    border:1px solid rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
+.contact-box a{
+color:#081b48;
 }
 
-.hero-card img{
-    width:100%;
-    border-radius:20px;
+.hero-image img{
+width:100%;
+border-radius:22px;
+box-shadow:0 12px 35px rgba(0,0,0,0.15);
 }
-
-/* STATS */
-
-.stats{
-    max-width:1250px;
-    margin:auto;
-    margin-top:-40px;
-    position:relative;
-    z-index:5;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:22px;
-}
-
-.stat-box{
-    background:#0c1d35;
-    padding:28px;
-    border-radius:22px;
-    text-align:center;
-    border:1px solid rgba(255,255,255,0.06);
-}
-
-.stat-box h3{
-    font-size:38px;
-    color:#4d8dff;
-    margin-bottom:6px;
-}
-
-.stat-box p{
-    color:#d7e1f3;
-    font-size:15px;
-}
-
-/* GENERAL */
 
 .section{
-    max-width:1250px;
-    margin:auto;
-    padding:95px 20px;
+padding:95px 0;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
+.title{
+text-align:center;
+margin-bottom:65px;
 }
 
-.section-title span{
-    color:#4d8dff;
-    font-weight:700;
-    font-size:14px;
-    letter-spacing:1px;
+.title h2{
+font-size:46px;
+color:#081b48;
+margin-bottom:15px;
 }
 
-.section-title h2{
-    font-size:50px;
-    margin-top:16px;
-    margin-bottom:18px;
-    line-height:1.15;
+.title p{
+max-width:900px;
+margin:auto;
+color:#555;
+font-size:18px;
 }
-
-.section-title p{
-    max-width:850px;
-    margin:auto;
-    color:#c8d4ea;
-    font-size:18px;
-}
-
-/* SERVICES */
 
 .services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:28px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
 }
 
-.service-box{
-    background:#0a1a31;
-    padding:40px 30px;
-    border-radius:24px;
-    border:1px solid rgba(255,255,255,0.06);
-    transition:0.3s ease;
-    text-align:center;
+.card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 6px 25px rgba(0,0,0,0.08);
+transition:.3s;
 }
 
-.service-box:hover{
-    transform:translateY(-8px);
+.card:hover{
+transform:translateY(-8px);
 }
 
-.service-icon{
-    width:82px;
-    height:82px;
-    border-radius:50%;
-    background:#12315f;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:auto;
-    margin-bottom:22px;
-    font-size:34px;
+.card img{
+width:100%;
+height:240px;
+object-fit:cover;
 }
 
-.service-box h3{
-    font-size:26px;
-    margin-bottom:14px;
+.card-content{
+padding:28px;
 }
 
-.service-box p{
-    color:#c8d4ea;
-    font-size:15px;
+.card-content h3{
+font-size:24px;
+margin-bottom:15px;
+color:#081b48;
 }
 
-/* WHY */
-
-.features-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:26px;
+.card-content p{
+font-size:15px;
+color:#555;
 }
 
-.feature-box{
-    text-align:center;
+.bg-light{
+background:#f7f9ff;
 }
 
-.feature-icon{
-    width:88px;
-    height:88px;
-    background:#0d2950;
-    border-radius:50%;
-    margin:auto;
-    margin-bottom:22px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:34px;
+.two-column{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
 }
 
-.feature-box h3{
-    font-size:24px;
-    margin-bottom:12px;
+.two-column img{
+width:100%;
+border-radius:20px;
 }
 
-.feature-box p{
-    color:#cbd7eb;
-    font-size:15px;
+.two-column h2{
+font-size:46px;
+margin-bottom:20px;
+color:#081b48;
 }
 
-/* FAQ */
-
-.faq-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:24px;
+.two-column p{
+margin-bottom:18px;
+font-size:17px;
+color:#444;
 }
 
-.faq-box{
-    background:#0b1c35;
-    padding:34px;
-    border-radius:24px;
-    border:1px solid rgba(255,255,255,0.06);
+ul{
+padding-left:20px;
 }
 
-.faq-box h3{
-    font-size:22px;
-    margin-bottom:16px;
+li{
+margin-bottom:12px;
 }
 
-.faq-box p{
-    color:#d3ddef;
-    font-size:15px;
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:40px;
 }
 
-/* CTA */
+.stat{
+background:#fff;
+padding:30px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stat h3{
+font-size:40px;
+color:#d71920;
+margin-bottom:10px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:40px;
+}
+
+.feature{
+background:#fff;
+padding:30px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 4px 18px rgba(0,0,0,0.08);
+}
+
+.feature h4{
+font-size:21px;
+margin-bottom:15px;
+color:#081b48;
+}
+
+.content-block{
+background:#ffffff;
+padding:95px 0;
+}
+
+.content-block h2{
+font-size:44px;
+margin-bottom:25px;
+color:#081b48;
+}
+
+.content-block p{
+font-size:17px;
+margin-bottom:20px;
+color:#444;
+}
+
+.faq-item{
+background:#fff;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.faq-item h3{
+color:#081b48;
+margin-bottom:12px;
+font-size:22px;
+}
 
 .cta{
-    max-width:1250px;
-    margin:auto;
-    margin-bottom:90px;
-    padding:70px 40px;
-    background:
-    linear-gradient(135deg,#0b2b58,#0d4fb5);
-    border-radius:34px;
-    text-align:center;
+background:linear-gradient(135deg,#081b48,#143d91);
+padding:90px 0;
+text-align:center;
+color:#fff;
 }
 
 .cta h2{
-    font-size:48px;
-    margin-bottom:20px;
+font-size:50px;
+margin-bottom:20px;
 }
 
 .cta p{
-    max-width:850px;
-    margin:auto;
-    color:#e2ebf8;
-    font-size:18px;
+max-width:850px;
+margin:auto;
+margin-bottom:30px;
+font-size:18px;
 }
 
-.cta-btn{
-    display:inline-block;
-    margin-top:35px;
-    background:#25d366;
-    color:#fff;
-    text-decoration:none;
-    padding:18px 38px;
-    border-radius:14px;
-    font-weight:700;
+.cta-contact{
+margin-top:30px;
+font-size:18px;
+font-weight:600;
+line-height:2;
 }
 
-/* FOOTER */
-
-.footer{
-    background:#020913;
-    padding:70px 20px 30px;
+.cta-contact a{
+color:#fff;
 }
 
-.footer-container{
-    max-width:1250px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:2fr 1.5fr 1.5fr;
-    gap:45px;
+footer{
+background:#081b48;
+color:#fff;
+padding:70px 0 30px;
 }
 
-.footer-logo h2{
-    font-size:32px;
-    margin-bottom:16px;
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:40px;
 }
 
-.footer-logo p{
-    color:#c4d1e8;
-    font-size:15px;
-    max-width:420px;
+footer h3{
+margin-bottom:20px;
+font-size:24px;
 }
 
-.footer-block h3{
-    margin-bottom:20px;
-    font-size:24px;
+footer p,
+footer li{
+color:#d7d7d7;
+font-size:15px;
+margin-bottom:10px;
 }
 
-.footer-block ul{
-    list-style:none;
+footer ul{
+list-style:none;
+padding:0;
 }
 
-.footer-block ul li{
-    margin-bottom:12px;
-    color:#c4d1e8;
-    font-size:15px;
+footer a{
+color:#d7d7d7;
 }
 
-.footer-bottom{
-    max-width:1250px;
-    margin:50px auto 0;
-    padding-top:25px;
-    border-top:1px solid rgba(255,255,255,0.08);
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:18px;
+.copy{
+text-align:center;
+margin-top:40px;
+padding-top:25px;
+border-top:1px solid rgba(255,255,255,.15);
 }
 
-.footer-bottom p{
-    color:#9fb0cc;
-    font-size:14px;
+@media(max-width:991px){
+
+.hero-grid,
+.two-column{
+grid-template-columns:1fr;
 }
 
-.footer-bottom-links{
-    display:flex;
-    gap:18px;
+.services-grid{
+grid-template-columns:1fr 1fr;
 }
 
-.footer-bottom-links a{
-    color:#d0dbed;
-    text-decoration:none;
-    font-size:14px;
+.feature-grid{
+grid-template-columns:1fr 1fr;
 }
 
-/* MOBILE */
-
-@media(max-width:950px){
-
-.hero-left h1{
-    font-size:46px;
+.hero h1{
+font-size:42px;
 }
 
-.section-title h2{
-    font-size:38px;
 }
 
+@media(max-width:767px){
+
+.menu{
+display:none;
+}
+
+.services-grid,
+.feature-grid,
+.stats,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.title h2,
+.two-column h2,
+.content-block h2,
 .cta h2{
-    font-size:34px;
+font-size:32px;
 }
-
-.footer-container{
-    grid-template-columns:1fr;
-}
-
-}
-
-@media(max-width:650px){
 
 .hero{
-    padding:90px 18px;
-}
-
-.hero-left h1{
-    font-size:38px;
-}
-
-.hero-left p{
-    font-size:17px;
-}
-
-.section{
-    padding:75px 18px;
-}
-
-.section-title h2{
-    font-size:30px;
-}
-
-.cta{
-    padding:55px 24px;
-}
-
-.cta h2{
-    font-size:28px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-}
-
-.primary-btn,
-.secondary-btn{
-    width:100%;
-    text-align:center;
-}
-
-.footer-bottom{
-    flex-direction:column;
-    align-items:flex-start;
+padding:60px 0;
 }
 
 }
@@ -483,45 +461,152 @@ body{
 
 <body>
 
-<!-- HERO -->
+<header>
+
+<div class="container navbar">
+
+<div class="logo">
+<a href="https://kalyanchandra.com" style="color:#081b48;">
+Kalyan <span>Chandra</span> Consulting
+</a>
+</div>
+
+<div class="menu">
+<a href="https://kalyanchandra.com">Home</a>
+<a href="#services">Services</a>
+<a href="#expertise">Expertise</a>
+<a href="#karnataka">Karnataka Politics</a>
+<a href="#faq">FAQs</a>
+</div>
+
+</div>
+
+</header>
 
 <section class="hero">
 
-<div class="hero-container">
+<div class="container hero-grid">
 
-<div class="hero-left">
-
-<div class="hero-badge">
-🌍 Multi Language Wikipedia Monitoring & Maintenance
-</div>
+<div>
 
 <h1>
-Wikipedia Maintenance Services To <span>Monitor, Update & Protect</span> Your Online Reputation
+Political Consulting Services in Bangalore & Karnataka
 </h1>
 
 <p>
-Protect and enhance your online presence with professional Wikipedia page maintenance services. We ensure accurate, up-to-date content that builds credibility, boosts visibility, and safeguards your digital reputation across multiple languages and countries.
+Kalyan Chandra Consulting provides professional political consulting services across Bangalore and Karnataka. We help political leaders, parties, organizations, and election candidates with campaign strategy, voter outreach, political research, ground operations, digital media, and election management services.
 </p>
 
 <div class="hero-buttons">
+<a href="#services" class="btn-primary">Explore Services</a>
+<a href="https://kalyanchandra.com" class="btn-secondary">Visit Website</a>
+</div>
 
-<a href="https://wa.me/919618106537" class="primary-btn">
-Get Free Consultation →
-</a>
+<div class="contact-strip">
 
-<a href="https://kalyanchandra.com" class="secondary-btn">
-Our Services →
+<div class="contact-box">
+📞 Mobile :
+<a href="tel:+919618106537">+91 9618106537</a>
+</div>
+
+<div class="contact-box">
+💬 WhatsApp :
+<a href="https://wa.me/919618106537" target="_blank">
+Chat on WhatsApp
 </a>
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://kalyanchandra.com/wp-content/uploads/2024/10/election-campaign-management-in-Bangalore-karnataka-1000x1000.webp" alt="Political Consulting Bangalore Karnataka">
 
 </div>
 
 </div>
 
-<div class="hero-right">
+</section>
 
-<div class="hero-card">
+<section class="section" id="services">
 
-<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*tbrXMWFE9IsGeu1X" alt="Wikipedia Maintenance">
+<div class="container">
+
+<div class="title">
+
+<h2>Political Consulting Services We Offer in Karnataka</h2>
+
+<p>
+Our consulting services are designed specifically for Karnataka elections, local political dynamics, regional campaign management, voter engagement, and political communication.
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<div class="card">
+
+<img src="https://kalyanchandra.com/wp-content/uploads/2024/10/election-campaign-management-in-Bangalore-karnataka-1000x1000.webp" alt="Election Campaign Management Bangalore">
+
+<div class="card-content">
+
+<h3>Election Campaign Management</h3>
+
+<p>
+Campaign planning, constituency management, booth coordination, volunteer deployment, event execution, candidate positioning, and election strategy development.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://kalyanchandra.com/wp-content/uploads/2024/10/political-pr-and-digital-media-Bangalore-karnataka-1000x1000.webp" alt="Political PR Karnataka">
+
+<div class="card-content">
+
+<h3>Political PR & Digital Media</h3>
+
+<p>
+Political branding, reputation management, social media campaigns, YouTube strategy, digital advertising, WhatsApp outreach, and narrative building.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://kalyanchandra.com/wp-content/uploads/2024/10/election-ground-management-in-Karnataka-bangalore-1000x1000.webp" alt="Ground Management Karnataka">
+
+<div class="card-content">
+
+<h3>Ground Management Services</h3>
+
+<p>
+Booth-level mobilization, grassroots outreach, field coordination, volunteer networks, local intelligence collection, and election-day operations.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://kalyanchandra.com/wp-content/uploads/2024/10/political-research-services-in-Bangalore-karnataka-1000x1000.webp" alt="Political Research Bangalore">
+
+<div class="card-content">
+
+<h3>Political Research & Surveys</h3>
+
+<p>
+Political surveys, opinion polls, voter behavior studies, constituency profiling, issue analysis, demographic research, and political intelligence reports.
+</p>
+
+</div>
 
 </div>
 
@@ -531,454 +616,307 @@ Our Services →
 
 </section>
 
-<!-- STATS -->
+<section class="section bg-light" id="expertise">
 
-<section class="stats">
+<div class="container two-column">
 
-<div class="stats-grid">
+<div>
 
-<div class="stat-box">
-<h3>10+</h3>
-<p>Years of Experience</p>
+<h2>
+Expertise in Bangalore & Karnataka Politics
+</h2>
+
+<p>
+Bangalore has one of India's most complex political environments. The city combines technology professionals, migrant populations, traditional voters, business communities, students, middle-class neighborhoods, and rapidly growing urban clusters.
+</p>
+
+<p>
+Political campaigns in Bangalore require strong digital communication, localized voter outreach, data-driven planning, social media influence, and constituency-level engagement.
+</p>
+
+<p>
+Across Karnataka, voting behavior differs significantly between regions such as Coastal Karnataka, Old Mysore, Kalyana Karnataka, Central Karnataka, and Mumbai Karnataka. Each region has unique political priorities and social dynamics.
+</p>
+
+<ul>
+
+<li>Regional political strategy development</li>
+<li>Constituency-level campaign planning</li>
+<li>Kannada-focused political communication</li>
+<li>Urban and rural voter outreach systems</li>
+<li>Political intelligence and survey operations</li>
+<li>Digital and ground campaign integration</li>
+
+</ul>
+
+<div class="stats">
+
+<div class="stat">
+<h3>100+</h3>
+<p>Political Projects</p>
 </div>
 
-<div class="stat-box">
-<h3>5000+</h3>
-<p>Pages Maintained</p>
+<div class="stat">
+<h3>15+</h3>
+<p>Years of Insights</p>
 </div>
 
-<div class="stat-box">
+<div class="stat">
 <h3>24/7</h3>
-<p>Monitoring Support</p>
+<p>Strategic Support</p>
 </div>
 
-<div class="stat-box">
-<h3>100%</h3>
-<p>Professional Monitoring</p>
+</div>
+
+</div>
+
+<div>
+
+<img src="https://kalyanchandra.com/wp-content/uploads/2024/10/election-ground-management-in-Karnataka-bangalore-1000x1000.webp" alt="Karnataka Election Consulting">
+
 </div>
 
 </div>
 
 </section>
 
-<!-- SERVICES -->
+<section class="section" id="karnataka">
 
-<section class="section">
+<div class="container">
 
-<div class="section-title">
+<div class="title">
 
-<span>OUR GLOBAL SERVICES</span>
+<h2>Why Karnataka Politics Requires Specialized Consulting</h2>
+
+<p>
+Karnataka remains one of India's most politically competitive states. Regional identities, leadership influence, social coalitions, urban growth, local issues, and community networks play a major role in electoral outcomes.
+</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h4>Regional Political Diversity</h4>
+<p>
+Different regions often display completely different voting behavior and campaign priorities.
+</p>
+</div>
+
+<div class="feature">
+<h4>Strong Urban Influence</h4>
+<p>
+Bangalore drives issue-based discussions, digital narratives, and policy-focused voter engagement.
+</p>
+</div>
+
+<div class="feature">
+<h4>Grassroots Organization</h4>
+<p>
+Ground strength and booth management remain critical factors in Karnataka elections.
+</p>
+</div>
+
+<div class="feature">
+<h4>Dynamic Political Landscape</h4>
+<p>
+Political alliances, local leadership, and constituency factors strongly shape electoral outcomes.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="content-block">
+
+<div class="container">
 
 <h2>
-Comprehensive Wikipedia Maintenance Services
+Strategic Political Consulting for Karnataka Elections
 </h2>
 
 <p>
-Professional Wikipedia maintenance, monitoring, and reputation management solutions for businesses, public figures, organizations, entrepreneurs, politicians, and celebrities.
+Political campaigns in Karnataka require much more than rallies and traditional outreach. Modern elections demand structured political communication, issue mapping, voter targeting, data analytics, social media influence, local intelligence gathering, and rapid campaign execution systems.
+</p>
+
+<p>
+Kalyan Chandra Consulting develops customized political consulting frameworks based on constituency realities, voter expectations, regional political trends, demographic patterns, and campaign objectives.
+</p>
+
+<p>
+Whether it is a local body election, assembly campaign, parliamentary election, political movement, or issue-based outreach initiative, our team helps build structured campaign systems designed for Karnataka's political environment.
 </p>
 
 </div>
 
-<div class="services-grid">
+</section>
 
-<div class="service-box">
-<div class="service-icon">📄</div>
-<h3>Wikipedia Page Creation</h3>
+<section class="section" id="faq">
+
+<div class="container">
+
+<div class="title">
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq-item">
+<h3>Do you provide political consulting services across Karnataka?</h3>
 <p>
-Professional Wikipedia page creation that follows Wikipedia guidelines and establishes a credible online presence.
+Yes. We provide political consulting services across Bangalore and multiple regions of Karnataka depending on campaign requirements.
 </p>
 </div>
 
-<div class="service-box">
-<div class="service-icon">✏️</div>
-<h3>Wikipedia Page Maintenance</h3>
+<div class="faq-item">
+<h3>Do you conduct political surveys in Karnataka?</h3>
 <p>
-Regular content updates, information additions, and revisions to keep your page accurate and relevant.
+Yes. We provide opinion polls, voter surveys, constituency research, issue mapping, and political intelligence services.
 </p>
 </div>
 
-<div class="service-box">
-<div class="service-icon">👁️</div>
-<h3>Wikipedia Page Monitoring</h3>
+<div class="faq-item">
+<h3>Do you handle political social media campaigns?</h3>
 <p>
-24/7 monitoring of your Wikipedia page for unauthorized changes, vandalism, and misinformation.
+Yes. Our team manages political social media strategy, content development, advertising campaigns, short videos, and reputation management.
 </p>
 </div>
 
-<div class="service-box">
-<div class="service-icon">🛡️</div>
-<h3>Wikipedia Page Protection</h3>
+<div class="faq-item">
+<h3>Can you assist with booth management?</h3>
 <p>
-Protection against harmful edits, misinformation, and unauthorized modifications affecting credibility.
+Yes. We provide booth-level planning, volunteer coordination, voter outreach systems, and election-day operational support.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Why is Bangalore politically important?</h3>
+<p>
+Bangalore influences statewide political narratives because of its urban population, economic importance, technology sector, and strong digital engagement levels.
 </p>
 </div>
 
 </div>
 
 </section>
-
-<!-- MULTI LANGUAGE -->
-
-<section class="section">
-
-<div class="section-title">
-
-<span>MULTI LANGUAGE WIKIPEDIA MONITORING</span>
-
-<h2>
-Multi Language Wikipedia Monitoring
-</h2>
-
-<p>
-Wikipedia today exists across multiple language ecosystems. Public figures, businesses, politicians, organizations, and celebrities often have pages in several languages that require regular monitoring and maintenance.
-</p>
-
-</div>
-
-<div class="services-grid">
-
-<div class="service-box">
-<div class="service-icon">🇺🇸</div>
-<h3>English Wikipedia</h3>
-<p>
-Monitoring English Wikipedia pages for global audiences including USA, UK, Canada, Australia, and international search visibility.
-</p>
-</div>
-
-<div class="service-box">
-<div class="service-icon">🇮🇳</div>
-<h3>Indian Language Wikipedia</h3>
-<p>
-Support for Hindi, Telugu, Tamil, Bengali, Kannada, Malayalam, and other regional Wikipedia editions.
-</p>
-</div>
-
-<div class="service-box">
-<div class="service-icon">🇦🇪</div>
-<h3>Arabic Wikipedia</h3>
-<p>
-Wikipedia maintenance solutions for UAE, Dubai, Middle East, and Arabic language visibility management.
-</p>
-</div>
-
-<div class="service-box">
-<div class="service-icon">🌍</div>
-<h3>Global Language Monitoring</h3>
-<p>
-Cross-language reputation monitoring and multilingual Wikipedia content tracking for international audiences.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- WHY -->
-
-<section class="section">
-
-<div class="section-title">
-
-<span>WHY WIKIPEDIA MAINTENANCE IS IMPORTANT</span>
-
-<h2>
-Why You Need Wikipedia Maintenance Services?
-</h2>
-
-</div>
-
-<div class="features-grid">
-
-<div class="feature-box">
-<div class="feature-icon">📈</div>
-<h3>Build Credibility</h3>
-<p>
-A well-maintained Wikipedia page establishes trust and authority in your field.
-</p>
-</div>
-
-<div class="feature-box">
-<div class="feature-icon">🛡️</div>
-<h3>Protect Reputation</h3>
-<p>
-Monitor and prevent negative edits or false information about your brand.
-</p>
-</div>
-
-<div class="feature-box">
-<div class="feature-icon">👁️</div>
-<h3>Increase Visibility</h3>
-<p>
-Improved Wikipedia presence helps increase visibility in search engines.
-</p>
-</div>
-
-<div class="feature-box">
-<div class="feature-icon">⏰</div>
-<h3>Save Time</h3>
-<p>
-We handle all updates and monitoring so you can focus on your work.
-</p>
-</div>
-
-<div class="feature-box">
-<div class="feature-icon">✅</div>
-<h3>Policy Compliance</h3>
-<p>
-Professional maintenance aligned with Wikipedia standards and guidelines.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- COUNTRY SUPPORT -->
-
-<section class="section">
-
-<div class="section-title">
-
-<span>COUNTRIES & REGIONS WE SUPPORT</span>
-
-<h2>
-Countries & Regions We Support
-</h2>
-
-<p>
-Professional Wikipedia monitoring and maintenance solutions for global clients across multiple countries and language ecosystems.
-</p>
-
-</div>
-
-<div class="services-grid">
-
-<div class="service-box">
-<div class="service-icon">🇺🇸</div>
-<h3>United States & Canada</h3>
-<p>
-English Wikipedia monitoring for entrepreneurs, businesses, organizations, and public figures targeting North American audiences.
-</p>
-</div>
-
-<div class="service-box">
-<div class="service-icon">🇬🇧</div>
-<h3>United Kingdom & Europe</h3>
-<p>
-Wikipedia page maintenance solutions for UK and European digital reputation management requirements.
-</p>
-</div>
-
-<div class="service-box">
-<div class="service-icon">🇮🇳</div>
-<h3>India</h3>
-<p>
-Regional language Wikipedia monitoring for politicians, film personalities, startups, and public organizations.
-</p>
-</div>
-
-<div class="service-box">
-<div class="service-icon">🇦🇪</div>
-<h3>Dubai & Middle East</h3>
-<p>
-Arabic and English Wikipedia maintenance for Middle East focused businesses and organizations.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- FAQ -->
-
-<section class="section">
-
-<div class="section-title">
-
-<span>FREQUENTLY ASKED QUESTIONS</span>
-
-<h2>
-Frequently Asked Questions
-</h2>
-
-<p>
-Common questions related to multilingual Wikipedia monitoring and maintenance services.
-</p>
-
-</div>
-
-<div class="faq-grid">
-
-<div class="faq-box">
-
-<h3>
-Why is multi language Wikipedia monitoring important?
-</h3>
-
-<p>
-Many organizations and public figures have Wikipedia pages in multiple languages. Monitoring only one version can leave other language pages vulnerable to misinformation and outdated content.
-</p>
-
-</div>
-
-<div class="faq-box">
-
-<h3>
-Do different language Wikipedias have different editing communities?
-</h3>
-
-<p>
-Yes. Every Wikipedia language edition has independent editors, moderation patterns, and community standards requiring specialized monitoring approaches.
-</p>
-
-</div>
-
-<div class="faq-box">
-
-<h3>
-Can harmful edits impact online reputation?
-</h3>
-
-<p>
-Incorrect Wikipedia edits can influence search visibility, public trust, media references, and digital reputation across search engines.
-</p>
-
-</div>
-
-<div class="faq-box">
-
-<h3>
-Do you support regional Indian language Wikipedia pages?
-</h3>
-
-<p>
-Yes. We support monitoring and maintenance for Telugu, Tamil, Hindi, Bengali, Kannada, Malayalam, and other regional language Wikipedia editions.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CTA -->
 
 <section class="cta">
 
+<div class="container">
+
 <h2>
-Ready to Protect Your Wikipedia Presence?
+Build a Strong Political Campaign in Karnataka
 </h2>
 
 <p>
-Contact us today for professional Wikipedia maintenance and monitoring services across multiple languages and countries.
+Partner with Kalyan Chandra Consulting for political consulting services, election management, voter outreach, political research, digital media strategy, and campaign execution across Bangalore and Karnataka.
 </p>
 
-<a href="https://wa.me/919618106537" class="cta-btn">
-Talk To Our Expert
+<a href="https://kalyanchandra.com" class="btn-primary">
+Visit KalyanChandra.com
 </a>
+
+<div class="cta-contact">
+
+📞 Call :
+<a href="tel:+919618106537">+91 9618106537</a>
+
+<br>
+
+💬 WhatsApp :
+<a href="https://wa.me/919618106537" target="_blank">
++91 9618106537
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<!-- FOOTER -->
+<footer>
 
-<footer class="footer">
+<div class="container">
 
-<div class="footer-container">
+<div class="footer-grid">
 
-<div class="footer-logo">
+<div>
 
-<h2>
-Kalyan Chandra
-</h2>
+<h3>Kalyan Chandra Consulting</h3>
 
 <p>
-Professional Wikipedia maintenance services to monitor, update, and protect your online reputation across global platforms and multilingual Wikipedia ecosystems.
+Political consulting services focused on Karnataka elections, campaign management, political PR, voter outreach, surveys, political intelligence, and strategic communication.
+</p>
+
+<p style="margin-top:20px;">
+📞 +91 9618106537
+<br>
+💬 WhatsApp Support Available
 </p>
 
 </div>
 
-<div class="footer-block">
+<div>
 
-<h3>
-Our Services
-</h3>
+<h3>Quick Links</h3>
 
 <ul>
-<li>Wikipedia Page Creation</li>
-<li>Wikipedia Page Maintenance</li>
-<li>Wikipedia Page Monitoring</li>
-<li>Wikipedia Page Protection</li>
-<li>Multi Language Wikipedia Monitoring</li>
+<li><a href="https://kalyanchandra.com">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#faq">FAQs</a></li>
 </ul>
 
 </div>
 
-<div class="footer-block">
+<div>
 
-<h3>
-Contact Info
-</h3>
+<h3>Core Services</h3>
 
 <ul>
-<li>📞 +91 96181 06537</li>
-<li>📧 info@kalyanchandra.com</li>
-<li>🌐 www.kalyanchandra.com</li>
-<li>📍 Hyderabad, India</li>
+<li>Political Consulting</li>
+<li>Election Campaign Management</li>
+<li>Political PR</li>
+<li>Digital Media Campaigns</li>
+<li>Political Surveys</li>
 </ul>
 
 </div>
 
 </div>
 
-<div class="footer-bottom">
-
-<p>
+<div class="copy">
 © 2026 Kalyan Chandra Consulting. All Rights Reserved.
-</p>
-
-<div class="footer-bottom-links">
-
-<a href="#">
-Privacy Policy
-</a>
-
-<a href="#">
-Terms & Conditions
-</a>
-
 </div>
 
 </div>
 
 </footer>
 
-<!-- STATCOUNTER CODE -->
-
+    <!-- StatCounter Code -->
 <script type="text/javascript">
-var sc_project=13147993;
+var sc_project=13010464;
 var sc_invisible=1;
-var sc_security="fa0aacf5";
+var sc_security="6c7d4f21";
 </script>
 
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
-async>
-</script>
+async></script>
 
 <noscript>
 <div class="statcounter">
-<a title="Web Analytics"
+<a title="web analytics"
 href="https://statcounter.com/"
 target="_blank">
 <img class="statcounter"
-src="https://c.statcounter.com/13147993/0/fa0aacf5/1/"
-alt="Web Analytics"
+src="https://c.statcounter.com/13010464/0/6c7d4f21/1/"
+alt="web analytics"
 referrerPolicy="no-referrer-when-downgrade">
 </a>
 </div>
 </noscript>
-
-<!-- END STATCOUNTER -->
 
 </body>
 </html>
