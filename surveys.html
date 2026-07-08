@@ -22,6 +22,61 @@ a:hover{text-decoration:underline}
 details{background:#fff;padding:15px;border-radius:8px;margin:10px 0;box-shadow:0 2px 6px rgba(0,0,0,.08)}
 footer{background:#0d2c54;color:#fff;padding:35px 20px;text-align:center}
 footer a{color:#fff}
+
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:40px 20px;
+}
+
+.heroimg{
+    width:100%;
+    height:500px;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+    border-radius:14px;
+    margin:0 auto 35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin:40px 0;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:translateY(-4px);
+}
+
+@media (max-width:768px){
+
+    .heroimg{
+        height:280px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery img{
+        height:240px;
+    }
+
+}
 </style>
 </head>
 <body>
@@ -33,14 +88,21 @@ footer a{color:#fff}
 
 <div class="container">
 
-<img class="heroimg" src="https://kalyanchandra.com/wp-content/uploads/2023/07/pre-poll-exit-poll-election-survey-agency-in-hyderabad-india.png" alt="Election Survey">
+    <img class="heroimg"
+         src="https://kalyanchandra.com/wp-content/uploads/2023/07/pre-poll-exit-poll-election-survey-agency-in-hyderabad-india.png"
+         alt="Election Survey">
 
-<h2>Why Election Surveys Matter</h2>
-<p>Election surveys help political parties, candidates, media organisations and research institutions understand voter opinion before voting begins. Scientific sampling, structured questionnaires, experienced investigators and careful data analysis help provide useful insights for campaign planning. A good survey identifies important public issues, leadership preferences and voting behaviour.</p>
+    <h2>Why Election Surveys Matter</h2>
 
-<div class="gallery">
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/05/top-pre-Poll-Election-survey-agency-in-Hyderabad-india-1000x1000.jpeg" alt="">
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/05/best-exit-poll-survey-services-company-in-india.jpeg" alt="">
+    <p>
+        Election surveys help political parties, candidates, media organisations and research institutions understand voter opinion before voting begins. Scientific sampling, structured questionnaires, experienced investigators and careful data analysis help provide useful insights for campaign planning. A good survey identifies important public issues, leadership preferences and voting behaviour.
+    </p>
+
+    <div class="gallery">
+        <img src="https://kalyanchandra.com/wp-content/uploads/2026/05/top-pre-Poll-Election-survey-agency-in-Hyderabad-india-1000x1000.jpeg" alt="">
+        <img src="https://kalyanchandra.com/wp-content/uploads/2026/05/best-exit-poll-survey-services-company-in-india.jpeg" alt="">
+    </div>
+
 </div>
 
 <div class="grid">
