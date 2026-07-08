@@ -77,6 +77,127 @@ footer a{color:#fff}
     }
 
 }
+
+  .grid{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+    margin-top:40px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid #e7eef8;
+    box-shadow:0 12px 30px rgba(13,44,84,.08);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(13,44,84,.15);
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:8px;
+    height:100%;
+    background:linear-gradient(180deg,#0d2c54,#0b5ed7);
+}
+
+.rank{
+    min-width:110px;
+    height:110px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0d2c54,#1b74e4);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.rank span:first-child{
+    font-size:34px;
+    line-height:1;
+}
+
+.rank span:last-child{
+    font-size:13px;
+    letter-spacing:2px;
+    margin-top:4px;
+}
+
+.content{
+    flex:1;
+}
+
+.content h3{
+    margin:0 0 10px;
+    font-size:28px;
+    color:#0d2c54;
+}
+
+.content p{
+    margin:0;
+    color:#555;
+    line-height:1.8;
+}
+
+.card-footer{
+    margin-top:18px;
+}
+
+.visit-btn{
+    display:inline-block;
+    background:#0d2c54;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 26px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.visit-btn:hover{
+    background:#1565d8;
+}
+
+.badge{
+    display:inline-block;
+    margin-bottom:12px;
+    background:#eef5ff;
+    color:#0d2c54;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+.card{
+flex-direction:column;
+text-align:center;
+}
+
+.content h3{
+font-size:24px;
+}
+
+}
+  
 </style>
 </head>
 <body>
@@ -108,35 +229,130 @@ footer a{color:#fff}
 <div class="grid">
 
 <div class="card">
-<div class="num">01</div>
+
+<div class="rank">
+<span>01</span>
+<span>RANK</span>
+</div>
+
+<div class="content">
+
+<div class="badge">National Election Research</div>
+
 <h3>Axis My India</h3>
-<p>Axis My India is one of the best-known election research organisations in India. It conducts opinion polls, pre poll surveys and post-election studies using structured field research and statistical analysis.</p>
+
+<p>
+Axis My India is one of India's most recognised election survey organisations. The company conducts opinion polls, pre poll surveys, exit polls and voter behaviour studies using scientific sampling, structured questionnaires and large field teams. It is widely known for election forecasting and political research.
+</p>
+
 </div>
 
+</div>
+
+
+
 <div class="card">
-<div class="num">02</div>
+
+<div class="rank">
+<span>02</span>
+<span>RANK</span>
+</div>
+
+<div class="content">
+
+<div class="badge">Political Consulting & Surveys</div>
+
 <h3>Political Metrics</h3>
-<p>Political Metrics provides election surveys, constituency research, voter profiling, campaign analytics and political consulting services across India. The organisation focuses on practical field research and actionable reports.</p>
-<p><a href="https://politicalmetrics.in/pre-poll-survey-agency-in-india/" target="_blank">Visit Political Metrics</a></p>
+
+<p>
+Political Metrics provides pre poll surveys, opinion polls, constituency profiling, voter segmentation, election analytics and campaign consulting across India. The organisation combines field research with data analysis to help political parties and candidates make informed campaign decisions.
+</p>
+
+<div class="card-footer">
+<a class="visit-btn" href="https://politicalmetrics.in/pre-poll-survey-agency-in-india/" target="_blank">
+Visit Website →
+</a>
 </div>
 
+</div>
+
+</div>
+
+
+
 <div class="card">
-<div class="num">03</div>
+
+<div class="rank">
+<span>03</span>
+<span>RANK</span>
+</div>
+
+<div class="content">
+
+<div class="badge">Opinion Poll Specialists</div>
+
 <h3>Kalyan Chandra Consulting</h3>
-<p>Kalyan Chandra Consulting offers opinion polls, election surveys, constituency assessment, voter behaviour studies and campaign research. The company works with political parties, candidates and organisations using structured research methods.</p>
-<p><a href="https://kalyanchandra.com/opinion-poll-election-surveys-in-india/" target="_blank">Visit Kalyan Chandra Consulting</a></p>
+
+<p>
+Kalyan Chandra Consulting offers election surveys, opinion polls, constituency assessment, campaign strategy, voter behaviour research and political intelligence services. The company supports political parties, candidates and organisations with practical research and campaign planning.
+</p>
+
+<div class="card-footer">
+<a class="visit-btn" href="https://kalyanchandra.com/opinion-poll-election-surveys-in-india/" target="_blank">
+Visit Website →
+</a>
 </div>
 
+</div>
+
+</div>
+
+
+
 <div class="card">
-<div class="num">04</div>
+
+<div class="rank">
+<span>04</span>
+<span>RANK</span>
+</div>
+
+<div class="content">
+
+<div class="badge">Election Analysis</div>
+
 <h3>Chanakya Today</h3>
-<p>Chanakya Today is known for election analysis, public opinion research and strategic political consulting with an emphasis on field-based information gathering.</p>
+
+<p>
+Chanakya Today focuses on political surveys, election analysis, public opinion research and campaign consulting. The organisation is known for structured field research and detailed electoral analysis.
+</p>
+
 </div>
 
+</div>
+
+
+
 <div class="card">
-<div class="num">05</div>
+
+<div class="rank">
+<span>05</span>
+<span>RANK</span>
+</div>
+
+<div class="content">
+
+<div class="badge">Survey & Analytics</div>
+
 <h3>Lead Tech</h3>
-<p>Lead Tech provides survey execution, market research and election data collection services for organisations looking for structured voter insights.</p>
+
+<p>
+Lead Tech provides election survey execution, market research, constituency studies and data collection services. The company supports research projects using structured field operations and analytics.
+</p>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
