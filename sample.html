@@ -1,1726 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Kalyan Chandra | Political Strategist & Election Campaign Consultant</title>
-
-<meta name="description" content="Political Strategy, Election Campaign Management, Political Research, Opinion Polls, Exit Polls, Campaign War Rooms, Political Analytics and Digital Campaign Management across India.">
-
-<meta name="keywords" content="Political Consultant India, Election Campaign Management, Political Research, Political Strategy, Opinion Polls, Exit Polls">
-
-<meta name="author" content="Kalyan Chandra">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-font-family:'Inter',sans-serif;
-
-background:#ffffff;
-
-color:#1d2939;
-
-line-height:1.7;
-
-overflow-x:hidden;
-
-}
-
-/******************************/
-
-.container{
-
-width:90%;
-
-max-width:1320px;
-
-margin:auto;
-
-}
-
-/******************************/
-
-header{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-background:rgba(7,32,63,.92);
-
-backdrop-filter:blur(10px);
-
-z-index:999;
-
-transition:.4s;
-
-}
-
-.navbar{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:18px 0;
-
-}
-
-.logo{
-
-font-size:30px;
-
-font-weight:800;
-
-color:#fff;
-
-letter-spacing:1px;
-
-}
-
-.logo span{
-
-color:#ffb703;
-
-}
-
-nav ul{
-
-display:flex;
-
-list-style:none;
-
-gap:34px;
-
-}
-
-nav ul li a{
-
-color:#fff;
-
-text-decoration:none;
-
-font-weight:500;
-
-transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-color:#ffb703;
-
-}
-
-.contact-btn{
-
-padding:12px 22px;
-
-background:#ffb703;
-
-border-radius:40px;
-
-color:#07203f;
-
-font-weight:700;
-
-text-decoration:none;
-
-}
-
-/******************************/
-
-.hero{
-
-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-position:relative;
-
-background:
-
-linear-gradient(rgba(7,32,63,.82),rgba(7,32,63,.82)),
-
-url("https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png");
-
-background-size:cover;
-
-background-position:center;
-
-color:#fff;
-
-}
-
-.hero-grid{
-
-display:grid;
-
-grid-template-columns:1.2fr .8fr;
-
-align-items:center;
-
-gap:60px;
-
-}
-
-.hero h4{
-
-color:#ffb703;
-
-font-size:20px;
-
-margin-bottom:15px;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-}
-
-.hero h1{
-
-font-size:68px;
-
-font-weight:800;
-
-line-height:1.1;
-
-margin-bottom:25px;
-
-}
-
-.hero p{
-
-font-size:20px;
-
-color:#d9e2ec;
-
-max-width:760px;
-
-margin-bottom:35px;
-
-}
-
-.hero-buttons{
-
-display:flex;
-
-gap:18px;
-
-flex-wrap:wrap;
-
-}
-
-.btn-primary{
-
-padding:16px 32px;
-
-background:#ffb703;
-
-color:#07203f;
-
-text-decoration:none;
-
-font-weight:700;
-
-border-radius:40px;
-
-transition:.3s;
-
-}
-
-.btn-primary:hover{
-
-transform:translateY(-4px);
-
-}
-
-.btn-secondary{
-
-padding:16px 32px;
-
-border:2px solid #fff;
-
-color:#fff;
-
-text-decoration:none;
-
-border-radius:40px;
-
-font-weight:700;
-
-transition:.3s;
-
-}
-
-.btn-secondary:hover{
-
-background:#fff;
-
-color:#07203f;
-
-}
-
-.hero-card{
-
-background:rgba(255,255,255,.08);
-
-padding:35px;
-
-border-radius:24px;
-
-backdrop-filter:blur(15px);
-
-border:1px solid rgba(255,255,255,.2);
-
-}
-
-.hero-card h3{
-
-margin-bottom:20px;
-
-font-size:26px;
-
-}
-
-.hero-card ul{
-
-list-style:none;
-
-}
-
-.hero-card li{
-
-padding:10px 0;
-
-border-bottom:1px solid rgba(255,255,255,.1);
-
-}
-
-.hero-card i{
-
-color:#ffb703;
-
-margin-right:10px;
-
-}
-
-.stats{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-margin-top:60px;
-
-gap:25px;
-
-}
-
-.stat{
-
-text-align:center;
-
-}
-
-.stat h2{
-
-font-size:40px;
-
-color:#ffb703;
-
-}
-
-.stat p{
-
-font-size:14px;
-
-color:#d9e2ec;
-
-}
-
-.floating-buttons{
-
-position:fixed;
-
-right:25px;
-
-bottom:25px;
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-z-index:9999;
-
-}
-
-.floating-buttons a{
-
-width:58px;
-
-height:58px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-border-radius:50%;
-
-color:#fff;
-
-font-size:22px;
-
-text-decoration:none;
-
-box-shadow:0 8px 30px rgba(0,0,0,.25);
-
-}
-
-.whatsapp{
-
-background:#25D366;
-
-}
-
-.call{
-
-background:#ff4d4d;
-
-}
-
-@media(max-width:992px){
-
-.hero-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.hero h1{
-
-font-size:44px;
-
-}
-
-.stats{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-nav{
-
-display:none;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyan Chandra - Personal Brand & Professional Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0d233a;
+            --secondary-color: #d4af37;
+            --text-color: #333333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--primary-color);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo a {
+            color: var(--white);
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(13, 35, 58, 0.85), rgba(13, 35, 58, 0.85)), url('https://kalyanchandra.com/wp-content/uploads/2021/05/cropped-kalyan-banner-1.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c49f27;
+            transform: translateY(-2px);
+        }
+
+        /* Section Common Styles */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        /* Activities Section */
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .activity-card {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-card i {
+            font-size: 40px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .activity-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        /* About Section */
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--light-bg);
+            max-width: 100%;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-method {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .contact-method i {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .contact-method.phone i { color: #3498db; }
+        .contact-method.whatsapp i { color: #25d366; }
+        .contact-method.email i { color: #e74c3c; }
+
+        .contact-method h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .contact-method p {
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .contact-method.phone .contact-btn { background-color: #3498db; }
+        .contact-method.whatsapp .contact-btn { background-color: #25d366; }
+        .contact-method.email .contact-btn { background-color: #e74c3c; }
+
+        .contact-method.phone .contact-btn:hover { background-color: #2980b9; }
+        .contact-method.whatsapp .contact-btn:hover { background-color: #128c7e; }
+        .contact-method.email .contact-btn:hover { background-color: #c0392b; }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* Simplification for a basic single page template */
+            }
+            .hero-content h1 {
+                font-size: 32px;
+            }
+            .hero-content p {
+                font-size: 16px;
+            }
+            .about-container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-
-<div class="container navbar">
-
-<div class="logo">
-
-Kalyan<span>Chandra</span>
-
-</div>
-
-<nav>
-
-<ul>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#services">Services</a></li>
-
-<li><a href="#research">Research</a></li>
-
-<li><a href="#warroom">War Room</a></li>
-
-<li><a href="#methodology">Methodology</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<a href="#contact" class="contact-btn">
-
-Contact
-
-</a>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div class="container hero-grid">
-
-<div>
-
-<h4>
-
-Political Strategy • Research • Intelligence
-
-</h4>
-
-<h1>
-
-Building Winning Political Campaigns Through Research, Strategy & Execution
-
-</h1>
-
-<p>
-
-Kalyan Chandra provides comprehensive political consulting services including election campaign management, political research, opinion polls, exit polls, campaign war rooms, political analytics, leadership positioning, constituency profiling, digital campaigning and strategic communication. Every recommendation is driven by data, field intelligence and measurable campaign outcomes.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="tel:+919618196537" class="btn-primary">
-
-<i class="fa-solid fa-phone"></i>
-
-Call Now
-
-</a>
-
-<a href="https://wa.me/919618196537"
-
-class="btn-secondary">
-
-<i class="fab fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
-
-</div>
-
-<div class="stats">
-
-<div class="stat">
-
-<h2>15+</h2>
-
-<p>Years Experience</p>
-
-</div>
-
-<div class="stat">
-
-<h2>500+</h2>
-
-<p>Political Research Projects</p>
-
-</div>
-
-<div class="stat">
-
-<h2>100+</h2>
-
-<p>Campaign Strategies</p>
-
-</div>
-
-<div class="stat">
-
-<h2>24×7</h2>
-
-<p>Campaign Support</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div class="hero-card">
-
-<h3>
-
-Our Expertise
-
-</h3>
-
-<ul>
-
-<li><i class="fa-solid fa-check"></i> Political Consulting</li>
-
-<li><i class="fa-solid fa-check"></i> Election Campaign Management</li>
-
-<li><i class="fa-solid fa-check"></i> Political Research</li>
-
-<li><i class="fa-solid fa-check"></i> Opinion Polls</li>
-
-<li><i class="fa-solid fa-check"></i> Exit Polls</li>
-
-<li><i class="fa-solid fa-check"></i> Ground Intelligence</li>
-
-<li><i class="fa-solid fa-check"></i> Campaign War Rooms</li>
-
-<li><i class="fa-solid fa-check"></i> Political Analytics</li>
-
-<li><i class="fa-solid fa-check"></i> Leader Branding</li>
-
-<li><i class="fa-solid fa-check"></i> Digital Campaigns</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="floating-buttons">
-
-<a href="https://wa.me/919618196537" class="whatsapp">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<a href="tel:+919618106537" class="call">
-
-<i class="fa-solid fa-phone"></i>
-
-</a>
-
-</div>
-
-
-  <!-- =========================
-ABOUT SECTION
-========================== -->
-
-<section id="about" style="padding:120px 0;background:#fff;">
-
-<div class="container">
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;">
-
-<div>
-
-<img
-src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png"
-alt="Kalyan Chandra"
-style="width:100%;border-radius:20px;box-shadow:0 25px 60px rgba(0,0,0,.18);">
-
-</div>
-
-<div>
-
-<span style="color:#d62828;font-weight:700;letter-spacing:2px;text-transform:uppercase;">
-About Kalyan Chandra
-</span>
-
-<h2 style="font-size:46px;margin:18px 0;color:#07203f;line-height:1.2;">
-
-Political Strategy Built on
-Research, Data &
-Ground Intelligence
-
-</h2>
-
-<p style="font-size:18px;color:#555;margin-bottom:20px;">
-
-Successful political campaigns are never built on assumptions. They are built on research, constituency understanding, leadership positioning and disciplined execution.
-
-</p>
-
-<p style="margin-bottom:18px;">
-
-Kalyan Chandra works with political leaders, parties and organizations to transform complex electoral challenges into structured campaign strategies. Every engagement begins with understanding voters, identifying constituency dynamics and developing practical roadmaps that can be implemented on the ground.
-
-</p>
-
-<p style="margin-bottom:18px;">
-
-The consulting approach combines political research, field intelligence, survey analytics, communication strategy and campaign management into one integrated framework. Rather than relying on intuition alone, every recommendation is supported by measurable insights and continuous monitoring.
-
-</p>
-
-<p>
-
-Whether preparing for Assembly elections, Parliamentary elections, local body elections or organisational strengthening, the objective remains the same—develop campaigns that connect with voters, improve organisational effectiveness and strengthen electoral performance.
-
-</p>
-
-<div style="margin-top:35px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;">
-
-<div style="padding:20px;background:#f5f7fb;border-radius:12px;">
-<h3 style="color:#07203f;">Research Driven</h3>
-<p>Every recommendation is backed by field data and voter insights.</p>
-</div>
-
-<div style="padding:20px;background:#f5f7fb;border-radius:12px;">
-<h3 style="color:#07203f;">Strategic Planning</h3>
-<p>Campaigns designed for measurable political outcomes.</p>
-</div>
-
-<div style="padding:20px;background:#f5f7fb;border-radius:12px;">
-<h3 style="color:#07203f;">Execution Focused</h3>
-<p>Ground implementation supported by structured monitoring.</p>
-</div>
-
-<div style="padding:20px;background:#f5f7fb;border-radius:12px;">
-<h3 style="color:#07203f;">Data Analytics</h3>
-<p>Research converted into practical campaign decisions.</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================
-CONSULTING PHILOSOPHY
-========================== -->
-
-<section style="background:#07203f;color:#fff;padding:110px 0;">
-
-<div class="container">
-
-<div style="text-align:center;max-width:900px;margin:auto;">
-
-<span style="color:#ffb703;font-weight:700;letter-spacing:2px;">
-CONSULTING PHILOSOPHY
-</span>
-
-<h2 style="font-size:48px;margin:20px 0;">
-
-Research Before Strategy.
-Strategy Before Execution.
-
-</h2>
-
-<p style="font-size:20px;color:#d7e2ef;line-height:1.9;">
-
-Effective campaigns begin with understanding people. Every constituency has unique social structures, political behaviour, leadership expectations and local issues. Successful election management therefore requires systematic research before campaign planning, and disciplined execution after strategy development.
-
-</p>
-
-</div>
-
-<div style="display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-margin-top:80px;">
-
-<div style="background:rgba(255,255,255,.06);
-padding:35px;
-border-radius:18px;">
-
-<h3>01</h3>
-
-<h4>Understand</h4>
-
-<p>Research voters, issues and political environment.</p>
-
-</div>
-
-<div style="background:rgba(255,255,255,.06);
-padding:35px;
-border-radius:18px;">
-
-<h3>02</h3>
-
-<h4>Plan</h4>
-
-<p>Create practical political strategy based on evidence.</p>
-
-</div>
-
-<div style="background:rgba(255,255,255,.06);
-padding:35px;
-border-radius:18px;">
-
-<h3>03</h3>
-
-<h4>Execute</h4>
-
-<p>Coordinate campaign activities across teams.</p>
-
-</div>
-
-<div style="background:rgba(255,255,255,.06);
-padding:35px;
-border-radius:18px;">
-
-<h3>04</h3>
-
-<h4>Improve</h4>
-
-<p>Measure campaign performance and optimise continuously.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================
-WHY CHOOSE US
-========================== -->
-
-<section style="padding:120px 0;background:#ffffff;">
-
-<div class="container">
-
-<div style="text-align:center;max-width:900px;margin:auto;">
-
-<span style="color:#d62828;font-weight:700;">
-WHY CHOOSE KALYAN CHANDRA
-</span>
-
-<h2 style="font-size:48px;color:#07203f;margin:20px 0;">
-
-A Structured Consulting Approach
-For Modern Political Campaigns
-
-</h2>
-
-</div>
-
-<div style="display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-margin-top:60px;">
-
-<div class="feature-card">
-
-<h3>Political Research</h3>
-
-<p>Evidence-based constituency analysis and voter behaviour research.</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>Survey Expertise</h3>
-
-<p>Opinion polls, exit polls and perception studies using scientific methodologies.</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>Ground Intelligence</h3>
-
-<p>Continuous monitoring of political developments and local sentiment.</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>Campaign War Rooms</h3>
-
-<p>Centralised monitoring, reporting and rapid response systems.</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>Political Analytics</h3>
-
-<p>Transforming data into campaign decisions and leadership insights.</p>
-
-</div>
-
-<div class="feature-card">
-
-<h3>Integrated Execution</h3>
-
-<p>Research, strategy and implementation managed as one coordinated programme.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.feature-card{
-
-padding:35px;
-
-background:#f8fafc;
-
-border-radius:18px;
-
-transition:.35s;
-
-border:1px solid #edf2f7;
-
-}
-
-.feature-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 20px 40px rgba(0,0,0,.12);
-
-}
-
-.feature-card h3{
-
-color:#07203f;
-
-margin-bottom:15px;
-
-}
-
-.feature-card p{
-
-color:#555;
-
-line-height:1.8;
-
-}
-
-@media(max-width:991px){
-
-#about .container>div{
-
-grid-template-columns:1fr!important;
-
-}
-
-section div[style*="repeat(4,1fr)"]{
-
-grid-template-columns:1fr 1fr!important;
-
-}
-
-section div[style*="repeat(3,1fr)"]{
-
-grid-template-columns:1fr!important;
-
-}
-
-}
-
-</style>
-
-
-  <!-- =====================================================
-SERVICES SECTION
-====================================================== -->
-
-<section id="services" style="padding:120px 0;background:#f8fafc;">
-
-<div class="container">
-
-<div style="text-align:center;max-width:900px;margin:auto;">
-
-<span style="color:#d62828;
-font-weight:700;
-letter-spacing:2px;
-text-transform:uppercase;">
-
-Our Expertise
-
-</span>
-
-<h2 style="font-size:48px;
-color:#07203f;
-margin:20px 0;">
-
-Comprehensive Political Consulting
-Services
-
-</h2>
-
-<p style="font-size:18px;color:#555;">
-
-From constituency research to election day management, our consulting model integrates strategy, field operations, analytics and communication into one coordinated campaign framework.
-
-</p>
-
-</div>
-
-<div style="display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:35px;
-margin-top:70px;">
-
-<!-- Card -->
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Political Consulting</h3>
-
-<p>
-
-Strategic political advice for leaders, political parties and independent candidates covering planning, positioning and campaign execution.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Election Campaign Management</h3>
-
-<p>
-
-Complete campaign planning including organisation, communication, voter outreach and monitoring.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Political Research</h3>
-
-<p>
-
-Scientific voter research, issue mapping, constituency profiling and demographic analysis.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Opinion Polls</h3>
-
-<p>
-
-Professional survey design, CATI surveys, household interviews and statistical reporting.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Exit Polls</h3>
-
-<p>
-
-Election-day surveys with structured sampling methods for vote trend estimation.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Ground Intelligence</h3>
-
-<p>
-
-Continuous constituency monitoring, local feedback and political sentiment analysis.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Campaign War Room</h3>
-
-<p>
-
-Integrated monitoring of campaign activities, media, digital platforms and field reports.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Political Analytics</h3>
-
-<p>
-
-Transforming research data into practical campaign insights and strategic decisions.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Leader Branding</h3>
-
-<p>
-
-Building a consistent public image through messaging, communication and media strategy.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Political PR</h3>
-
-<p>
-
-Media engagement, press communication and reputation management for political leaders.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Digital Campaigns</h3>
-
-<p>
-
-Integrated digital outreach across websites, social media, online advertising and analytics.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png">
-
-<h3>Booth Management</h3>
-
-<p>
-
-Strengthening booth-level organisation, volunteer coordination and election-day operations.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.service-card{
-
-background:#ffffff;
-
-border-radius:18px;
-
-overflow:hidden;
-
-box-shadow:0 12px 35px rgba(0,0,0,.08);
-
-transition:.35s;
-
-}
-
-.service-card:hover{
-
-transform:translateY(-12px);
-
-box-shadow:0 30px 55px rgba(0,0,0,.15);
-
-}
-
-.service-card img{
-
-width:100%;
-
-height:220px;
-
-object-fit:cover;
-
-}
-
-.service-card h3{
-
-font-size:24px;
-
-color:#07203f;
-
-padding:25px 25px 10px;
-
-}
-
-.service-card p{
-
-padding:0 25px 30px;
-
-line-height:1.8;
-
-color:#555;
-
-}
-
-@media(max-width:992px){
-
-#services .container div[style*="repeat(3,1fr)"]{
-
-grid-template-columns:1fr 1fr !important;
-
-}
-
-}
-
-@media(max-width:700px){
-
-#services .container div[style*="repeat(3,1fr)"]{
-
-grid-template-columns:1fr !important;
-
-}
-
-}
-
-</style>
-
-
-  <!-- ===================================================
-POLITICAL RESEARCH & CAMPAIGN INTELLIGENCE
-=================================================== -->
-
-<section id="research" style="padding:130px 0;background:#ffffff;">
-
-<div class="container">
-
-<div style="display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-align-items:center;">
-
-<div>
-
-<span style="font-weight:700;
-color:#d62828;
-letter-spacing:2px;
-text-transform:uppercase;">
-
-Political Research
-
-</span>
-
-<h2 style="font-size:50px;
-margin:20px 0;
-color:#07203f;
-line-height:1.2;">
-
-Research That
-Shapes Winning
-Campaigns
-
-</h2>
-
-<p style="font-size:18px;
-color:#555;
-margin-bottom:25px;">
-
-Political campaigns become more effective when every important decision is supported by evidence. Research helps identify voter expectations, constituency priorities, leadership perception and emerging political trends before campaign resources are deployed.
-
-</p>
-
-<p style="margin-bottom:20px;">
-
-Our research combines quantitative surveys with qualitative field intelligence, enabling political leaders to understand not only what voters think but also why they think that way.
-
-</p>
-
-<div style="display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-margin-top:35px;">
-
-<div class="research-box">
-
-<h3>Opinion Polls</h3>
-
-<p>
-
-Measure voter preference before elections using structured scientific sampling.
-
-</p>
-
-</div>
-
-<div class="research-box">
-
-<h3>Exit Polls</h3>
-
-<p>
-
-Understand voting behaviour immediately after polling.
-
-</p>
-
-</div>
-
-<div class="research-box">
-
-<h3>Household Surveys</h3>
-
-<p>
-
-Capture constituency-level voter opinions and public sentiment.
-
-</p>
-
-</div>
-
-<div class="research-box">
-
-<h3>Ground Intelligence</h3>
-
-<p>
-
-Collect real-time political feedback from local networks.
-
-</p>
-
-</div>
-
-<div class="research-box">
-
-<h3>Focus Groups</h3>
-
-<p>
-
-Evaluate campaign messages and leadership perception.
-
-</p>
-
-</div>
-
-<div class="research-box">
-
-<h3>Constituency Profiling</h3>
-
-<p>
-
-Comprehensive demographic and political assessment.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<img src="https://kalyanchandra.com/wp-content/uploads/2026/06/top-political-Strategists-in-india.png"
-
-style="width:100%;
-border-radius:24px;
-box-shadow:0 30px 60px rgba(0,0,0,.18);">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================
-CAMPAIGN METHODOLOGY
-=================================================== -->
-
-<section id="methodology"
-
-style="padding:130px 0;
-background:#07203f;
-color:#ffffff;">
-
-<div class="container">
-
-<div style="text-align:center;
-max-width:950px;
-margin:auto;">
-
-<span style="color:#ffb703;
-font-weight:700;
-letter-spacing:2px;">
-
-CAMPAIGN METHODOLOGY
-
-</span>
-
-<h2 style="font-size:52px;
-margin:20px 0;">
-
-A Structured Process
-Designed for Electoral Success
-
-</h2>
-
-<p style="font-size:20px;
-color:#d8e5f2;">
-
-Every political campaign requires planning, execution and continuous evaluation. Our methodology ensures every activity contributes towards measurable campaign objectives.
-
-</p>
-
-</div>
-
-<div class="timeline-grid">
-
-<div class="timeline-card">
-
-<div class="circle">
-
-01
-
-</div>
-
-<h3>
-
-Research
-
-</h3>
-
-<p>
-
-Understand voters, demographics, issues and constituency dynamics.
-
-</p>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="circle">
-
-02
-
-</div>
-
-<h3>
-
-Strategy
-
-</h3>
-
-<p>
-
-Develop campaign messaging, positioning and political roadmap.
-
-</p>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="circle">
-
-03
-
-</div>
-
-<h3>
-
-Organisation
-
-</h3>
-
-<p>
-
-Strengthen booth committees, volunteers and leadership teams.
-
-</p>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="circle">
-
-04
-
-</div>
-
-<h3>
-
-Communication
-
-</h3>
-
-<p>
-
-Deliver consistent messaging across media, digital and public outreach.
-
-</p>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="circle">
-
-05
-
-</div>
-
-<h3>
-
-Execution
-
-</h3>
-
-<p>
-
-Implement campaign activities with continuous monitoring.
-
-</p>
-
-</div>
-
-<div class="timeline-card">
-
-<div class="circle">
-
-06
-
-</div>
-
-<h3>
-
-Analytics
-
-</h3>
-
-<p>
-
-Track campaign performance and optimise strategy continuously.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.research-box{
-
-padding:25px;
-
-background:#f8fafc;
-
-border-radius:16px;
-
-transition:.35s;
-
-border:1px solid #edf2f7;
-
-}
-
-.research-box:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 18px 35px rgba(0,0,0,.12);
-
-}
-
-.research-box h3{
-
-margin-bottom:10px;
-
-color:#07203f;
-
-}
-
-.timeline-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:35px;
-
-margin-top:80px;
-
-}
-
-.timeline-card{
-
-background:rgba(255,255,255,.06);
-
-padding:40px;
-
-border-radius:20px;
-
-text-align:center;
-
-transition:.35s;
-
-}
-
-.timeline-card:hover{
-
-transform:translateY(-12px);
-
-background:rgba(255,255,255,.12);
-
-}
-
-.circle{
-
-width:70px;
-
-height:70px;
-
-border-radius:50%;
-
-background:#ffb703;
-
-color:#07203f;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:24px;
-
-font-weight:700;
-
-margin:auto auto 25px;
-
-}
-
-.timeline-card h3{
-
-margin-bottom:15px;
-
-font-size:26px;
-
-}
-
-.timeline-card p{
-
-color:#d8e5f2;
-
-line-height:1.8;
-
-}
-
-@media(max-width:991px){
-
-.timeline-grid{
-
-grid-template-columns:1fr 1fr;
-
-}
-
-#research .container>div{
-
-grid-template-columns:1fr !important;
-
-}
-
-}
-
-@media(max-width:700px){
-
-.timeline-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-</style>
-
-  
-  
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="#">KALYAN <span>CHANDRA</span></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Kalyan Chandra</h1>
+            <p>Empowering individuals and corporate structures through specialized leadership training, keynotes, and strategic development consulting.</p>
+            <a href="#activities" class="btn">Explore Activities</a>
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2 class="section-title">Key Activities</h2>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h3>Keynote Speaking</h3>
+                <p>Delivering high-impact, motivational presentations aimed at shifting mindsets and driving transformational change within leadership structures.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fa-solid fa-users-gear"></i>
+                <h3>Corporate Training</h3>
+                <p>Tailored workshops focused on team building, productivity enhancement, corporate alignment, and leadership scaling methodologies.</p>
+            </div>
+            <div class="activity-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Strategic Consulting</h3>
+                <p>Collaborating with organizational leaders to diagnose roadblocks, conceptualize growth architectures, and execute scalable strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="border-top: 1px solid #eee;">
+        <h2 class="section-title">About Kalyan Chandra</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://kalyanchandra.com/wp-content/uploads/2021/05/kalyan-logo-blue.jpg" alt="Kalyan Chandra Logo Brand">
+            </div>
+            <div class="about-text">
+                <p><strong>Kalyan Chandra</strong> is a seasoned visionary leader, corporate coach, and professional speaker dedicated to fostering sustainable performance changes in modern ecosystems.</p>
+                <p>With an extensive background in understanding human behavioral patterns and organizational growth trajectories, he brings to the table actionable insights rather than just theoretical guidelines.</p>
+                <p>Through structured training modules and interactive strategic interventions, his core mandate remains helping individuals bridge the gap between inherent potential and daily operational performance output.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-container">
+            <div class="contact-method phone">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Call Me</h3>
+                <p>For urgent inquiries & bookings</p>
+                <a href="tel:+1234567890" class="contact-btn">Call Now</a>
+            </div>
+
+            <div class="contact-method whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>Instant chat & direct messaging</p>
+                <a href="https://wa.me/1234567890?text=Hello%20Kalyan,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="contact-btn">Chat Live</a>
+            </div>
+
+            <div class="contact-method email">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>For detailed corporate proposals</p>
+                <a href="mailto:info@kalyanchandra.com" class="contact-btn">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kalyan Chandra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
