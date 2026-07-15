@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Research & Survey Agency in Hyderabad | Kalyan Chandra Consulting</title>
+<meta name="description" content="Hyderabad's data-driven market research and survey analytics firm. Consumer studies, brand perception, competitor intelligence, and public opinion research across Telangana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #0B2545;
+    --navy-deep: #071A33;
+    --orange: #E2601F;
+    --amber: #F0A83C;
+    --red: #B32026;
+    --paper: #F7F4EE;
+    --paper-dim: #EFEAE0;
+    --ink: #16202E;
+    --ink-soft: #48545E;
+    --line: rgba(11,37,69,0.14);
+    --white: #ffffff;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3,h4{
+    font-family:'Source Serif 4', serif;
+    font-weight:600;
+    color:var(--navy);
+    margin:0 0 0.5em 0;
+    letter-spacing:-0.01em;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:0.72rem;
+    font-weight:600;
+    color:var(--orange);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:26px;height:2px;background:var(--orange);display:inline-block;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+
+  /* NAV */
+  .navbar{
+    background:var(--navy);
+    position:sticky;top:0;z-index:50;
+    border-bottom:3px solid var(--orange);
+  }
+  .nav-inner{
+    max-width:1180px;margin:0 auto;padding:0 32px;
+    display:flex;align-items:center;justify-content:space-between;
+    height:76px;
+  }
+  .nav-logo img{height:42px;width:auto;filter:brightness(0) invert(1);}
+  .nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0;}
+  .nav-links a{
+    color:#DCE4F0;text-decoration:none;font-size:0.92rem;font-weight:500;
+    transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--amber);}
+  .nav-cta{
+    background:var(--orange);color:#fff !important;
+    padding:10px 20px;border-radius:3px;font-weight:600;font-size:0.88rem;
+    text-decoration:none;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--red);}
+  .nav-toggle{display:none;}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+    border-radius:50%;background:radial-gradient(circle, rgba(226,96,31,0.25), transparent 70%);
+  }
+  .hero-inner{
+    max-width:1180px;margin:0 auto;padding:80px 32px 70px;
+    display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;align-items:center;
+    position:relative;z-index:2;
+  }
+  .hero h1{color:#fff;font-size:2.7rem;line-height:1.14;margin-bottom:22px;}
+  .hero h1 em{font-style:normal;color:var(--amber);}
+  .hero p.lead{color:#C6D1E3;font-size:1.08rem;max-width:540px;margin-bottom:30px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--orange);color:#fff;padding:14px 26px;border-radius:3px;
+    font-weight:600;text-decoration:none;font-size:0.95rem;display:inline-block;
+    box-shadow:0 8px 20px rgba(226,96,31,0.3);
+  }
+  .btn-primary:hover{background:var(--red);}
+  .btn-ghost{
+    border:1.5px solid rgba(255,255,255,0.35);color:#fff;padding:13px 24px;border-radius:3px;
+    text-decoration:none;font-weight:600;font-size:0.95rem;display:inline-block;
+  }
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber);}
+  .hero-img{
+    border-radius:6px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.12);
+  }
+  .hero-stats{
+    display:flex;gap:0;border-top:1px solid rgba(255,255,255,0.14);
+    background:rgba(255,255,255,0.03);
+  }
+  .hero-stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);}
+  .hstat{padding:26px 10px;border-right:1px solid rgba(255,255,255,0.1);}
+  .hstat:last-child{border-right:none;}
+  .hstat .num{font-family:'IBM Plex Mono',monospace;font-size:1.7rem;font-weight:600;color:var(--amber);}
+  .hstat .lbl{font-size:0.78rem;color:#AEBBD0;margin-top:4px;}
+
+  section{padding:88px 0;}
+  .section-tight{padding:70px 0;}
+  .band-paper{background:var(--paper);}
+  .band-dim{background:var(--paper-dim);}
+  .band-navy{background:var(--navy);color:#fff;}
+  .band-navy h2{color:#fff;}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .two-col.rev{grid-template-columns:1fr 1fr;}
+  .two-col img{border-radius:6px;}
+  .cap-figure{position:relative;}
+  .cap-figure .tag{
+    position:absolute;bottom:-16px;left:20px;background:var(--orange);color:#fff;
+    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;padding:8px 14px;border-radius:3px;
+    letter-spacing:0.04em;box-shadow:0 6px 16px rgba(0,0,0,0.2);
+  }
+  .lead-text{font-size:1.06rem;color:var(--ink-soft);margin-bottom:16px;}
+  .lead-text strong{color:var(--navy);}
+
+  /* Framework steps */
+  .steps{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+    border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff;
+  }
+  .step{padding:34px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .step:nth-child(3n){border-right:none;}
+  .step-num{
+    font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--orange);font-weight:600;
+    margin-bottom:10px;letter-spacing:0.05em;
+  }
+  .step h4{font-size:1.08rem;margin-bottom:8px;}
+  .step p{font-size:0.9rem;color:var(--ink-soft);margin:0;}
+
+  /* Services grid */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;}
+  .svc-card{background:#fff;padding:28px 26px;}
+  .svc-card .sidx{font-family:'IBM Plex Mono',monospace;color:var(--amber);background:var(--navy);
+    display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:3px;
+    font-size:0.78rem;margin-bottom:14px;}
+  .svc-card h4{font-size:1.0rem;margin-bottom:6px;}
+  .svc-card p{font-size:0.88rem;color:var(--ink-soft);margin:0;}
+
+  /* Locality strip */
+  .locality-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+  .locality-chip{
+    border:1px solid var(--line);background:#fff;padding:8px 16px;border-radius:20px;
+    font-size:0.84rem;color:var(--navy);font-weight:500;
+  }
+
+  /* Testimonials */
+  .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
+  .testi-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--orange);
+    padding:30px 30px;border-radius:4px;}
+  .testi-card p.quote{font-size:1.02rem;color:var(--ink);font-style:italic;margin-bottom:16px;}
+  .testi-foot{display:flex;justify-content:space-between;align-items:center;font-size:0.85rem;}
+  .testi-foot .stars{color:var(--amber);letter-spacing:2px;}
+  .rating-banner{
+    margin-top:36px;background:var(--navy);color:#fff;border-radius:6px;padding:28px 34px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  .rating-banner .big{font-family:'IBM Plex Mono',monospace;font-size:2.1rem;color:var(--amber);font-weight:600;}
+
+  /* Insights */
+  .insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .insight-card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:30px 26px;}
+  .insight-card .tag2{
+    font-family:'IBM Plex Mono',monospace;font-size:0.7rem;color:var(--red);text-transform:uppercase;
+    letter-spacing:0.08em;margin-bottom:10px;display:block;
+  }
+  .insight-card h4{font-size:1.02rem;line-height:1.35;margin-bottom:10px;}
+  .insight-card p{font-size:0.88rem;color:var(--ink-soft);}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line);padding:22px 0;}
+  .faq-item h4{font-size:1.02rem;color:var(--navy);margin-bottom:8px;}
+  .faq-item p{font-size:0.92rem;color:var(--ink-soft);margin:0;}
+
+  /* CTA band */
+  .cta-band{
+    background:linear-gradient(120deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;border-radius:8px;padding:52px 50px;
+    display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;
+    position:relative;overflow:hidden;
+  }
+  .cta-band::before{
+    content:"";position:absolute;left:-60px;bottom:-80px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle, rgba(240,168,60,0.22), transparent 70%);
+  }
+  .cta-band h3{color:#fff;font-size:1.5rem;margin-bottom:8px;position:relative;z-index:2;}
+  .cta-band p{color:#C6D1E3;margin:0;position:relative;z-index:2;}
+  .cta-actions{display:flex;gap:14px;position:relative;z-index:2;flex-wrap:wrap;}
+
+  /* Footer */
+  footer{background:var(--navy-deep);color:#B9C3D6;padding:56px 0 26px;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  .foot-grid h5{color:#fff;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:16px;font-family:'Inter';}
+  .foot-grid img{height:34px;filter:brightness(0) invert(1);margin-bottom:14px;}
+  .foot-grid p{font-size:0.86rem;line-height:1.7;}
+  .foot-grid a{display:block;color:#B9C3D6;text-decoration:none;font-size:0.86rem;margin-bottom:10px;}
+  .foot-grid a:hover{color:var(--amber);}
+  .foot-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;
+    display:flex;justify-content:space-between;font-size:0.8rem;color:#7E8AA0;flex-wrap:wrap;gap:10px;
+  }
+  .wa-float{
+    position:fixed;bottom:26px;right:26px;background:#25D366;color:#fff;
+    width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px rgba(0,0,0,0.3);z-index:60;text-decoration:none;font-size:1.6rem;
+  }
+
+  @media (max-width: 900px){
+    .hero-inner{grid-template-columns:1fr;padding-top:50px;}
+    .hero h1{font-size:2.1rem;}
+    .nav-links{display:none;}
+    .two-col{grid-template-columns:1fr;gap:36px;}
+    .steps{grid-template-columns:1fr;}
+    .step{border-right:none;}
+    .svc-grid{grid-template-columns:1fr 1fr;}
+    .insight-grid{grid-template-columns:1fr;}
+    .testi-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .hero-stats .wrap{grid-template-columns:1fr 1fr;}
+    .cta-band{flex-direction:column;align-items:flex-start;}
+  }
+  @media (max-width: 600px){
+    .svc-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .wrap{padding:0 20px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="https://kalyanchandra.com">
+      <img src="https://kalyanchandra.com/wp-content/uploads/2024/07/kalyan-chandra.png" alt="Kalyan Chandra Consulting logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#hyderabad">Hyderabad Focus</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="nav-cta" href="tel:+919618106537">+91 96181 06537</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow" style="color:var(--amber)">MARKET RESEARCH · HYDERABAD & TELANGANA</div>
+      <h1>Decisions built on <em>evidence</em>, not assumption — for Hyderabad's boldest businesses and institutions.</h1>
+      <p class="lead">Political Metrics runs consumer studies, brand and competitor intelligence, and public opinion research across Hyderabad, Cyberabad, Secunderabad and greater Telangana — pairing rigorous sampling with on-ground, Telugu-fluent field teams.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="https://api.whatsapp.com/send?phone=+919618106537&text=Hello%2C%20I%27d%20like%20a%20market%20research%20consultation">Start a Consultation</a>
+        <a class="btn-ghost" href="#services">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="http://kalyanchandra.com/wp-content/uploads/2026/07/analytics_command_center_100kb.jpg" alt="Analytics command center dashboard">
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="wrap">
+      <div class="hstat"><div class="num">76+</div><div class="lbl">Research studies delivered</div></div>
+      <div class="hstat"><div class="num">4.8/5</div><div class="lbl">Average client rating</div></div>
+      <div class="hstat"><div class="num">18</div><div class="lbl">Specialised research services</div></div>
+      <div class="hstat"><div class="num">2</div><div class="lbl">Field hubs — Hyderabad & Bangalore</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- FROM INFORMATION TO INTELLIGENCE -->
+<section class="band-paper" id="approach">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <div class="eyebrow">FROM INFORMATION TO INTELLIGENCE</div>
+        <h2 style="font-size:2rem;">Hyderabad's markets move fast. Your research should keep pace.</h2>
+        <p class="lead-text">Between the IT corridor of HITEC City and Gachibowli, the trading hubs of Begum Bazaar, and Telangana's shifting political landscape, Hyderabad is a city of overlapping economies. <strong>Generic, one-size-fits-all research misses that texture.</strong></p>
+        <p class="lead-text">We combine structured quantitative surveys with qualitative depth interviews and grassroots field research, calibrated to local language, neighbourhood, and community context — so the insight you receive reflects how Hyderabad actually thinks, spends, and votes.</p>
+        <p class="lead-text">The result: research your leadership team can act on immediately, not a report that sits in a folder.</p>
+      </div>
+      <div class="cap-figure">
+        <img src="http://kalyanchandra.com/wp-content/uploads/2026/07/market_research_office_100kb.jpg" alt="Market research strategy office in Hyderabad">
+        <div class="tag">STRATEGY & RESEARCH DESK — HYDERABAD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section class="band-dim">
+  <div class="wrap">
+    <div class="eyebrow">METHODOLOGY</div>
+    <h2 style="font-size:2rem;margin-bottom:12px;">A 6-step framework, built for Hyderabad's market complexity</h2>
+    <p class="lead-text" style="max-width:680px;margin-bottom:40px;">Every engagement follows the same disciplined process — proven across consumer, corporate, and political research assignments in Telangana.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">01 · OBJECTIVES</div><h4>Define Objectives</h4><p>We clarify what decision the research needs to support — market entry, brand health, product-market fit, or voter sentiment.</p></div>
+      <div class="step"><div class="step-num">02 · DESIGN</div><h4>Design the Method</h4><p>We choose the right instrument — structured surveys, focus groups, depth interviews, or door-to-door field studies — for Hyderabad's audience mix.</p></div>
+      <div class="step"><div class="step-num">03 · FIELD</div><h4>Collect Reliable Data</h4><p>Telugu and Urdu-fluent field teams run scientific sampling across GHMC wards, IT corridors, and peri-urban Telangana.</p></div>
+      <div class="step"><div class="step-num">04 · ANALYSE</div><h4>Analyse & Interpret</h4><p>Statistical modelling and cross-tabulation surface the patterns that matter — not just the topline numbers.</p></div>
+      <div class="step"><div class="step-num">05 · REPORT</div><h4>Report the Insight</h4><p>Findings arrive as a clear, decision-ready narrative with visual dashboards — built for leadership, not analysts.</p></div>
+      <div class="step"><div class="step-num">06 · REFINE</div><h4>Implement & Refine</h4><p>We track outcomes post-implementation and refine the research cadence as your Hyderabad market evolves.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="band-paper" id="services">
+  <div class="wrap">
+    <div class="eyebrow">FULL-STACK RESEARCH SERVICES</div>
+    <h2 style="font-size:2rem;margin-bottom:12px;">Market research and survey services for Hyderabad organisations</h2>
+    <p class="lead-text" style="max-width:700px;margin-bottom:36px;">From a single consumer study to an ongoing tracking programme, our services span the full research lifecycle.</p>
+    <div class="svc-grid">
+      <div class="svc-card"><span class="sidx">01</span><h4>Consumer Research</h4><p>Understand what Hyderabad's consumers need, prefer, and switch brands for.</p></div>
+      <div class="svc-card"><span class="sidx">02</span><h4>Brand Perception Studies</h4><p>Measure recall and positioning across Hyderabad's competitive retail and D2C landscape.</p></div>
+      <div class="svc-card"><span class="sidx">03</span><h4>Product Testing & Feedback</h4><p>Validate concepts and prototypes with real feedback before a city-wide launch.</p></div>
+      <div class="svc-card"><span class="sidx">04</span><h4>Competitor & Market Intelligence</h4><p>Track how competitors are moving across Hyderabad and Secunderabad markets.</p></div>
+      <div class="svc-card"><span class="sidx">05</span><h4>Social & Political Surveys</h4><p>Voter sentiment, opinion polling, and issue-based research across Telangana constituencies.</p></div>
+      <div class="svc-card"><span class="sidx">06</span><h4>Employee & Organisational Research</h4><p>Culture and satisfaction studies for Hyderabad's IT, ITES, and pharma workforce.</p></div>
+      <div class="svc-card"><span class="sidx">07</span><h4>Industry Trend Analysis</h4><p>Track demand shifts across pharma, IT, real estate, and retail sectors locally.</p></div>
+      <div class="svc-card"><span class="sidx">08</span><h4>Field & On-Ground Surveys</h4><p>Door-to-door and intercept surveys across GHMC wards and peri-urban Telangana.</p></div>
+      <div class="svc-card"><span class="sidx">09</span><h4>Online & Digital Surveys</h4><p>Rapid-turnaround digital research reaching Hyderabad's connected, younger audience.</p></div>
+      <div class="svc-card"><span class="sidx">10</span><h4>Customer Satisfaction & NPS</h4><p>Benchmark loyalty and service quality against local competitors.</p></div>
+      <div class="svc-card"><span class="sidx">11</span><h4>Feasibility Studies</h4><p>Assess viability before entering the Hyderabad market or expanding within it.</p></div>
+      <div class="svc-card"><span class="sidx">12</span><h4>Policy & Public Opinion Research</h4><p>Governance and citizen-sentiment research for policymakers and institutions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HYDERABAD FOCUS -->
+<section class="band-dim" id="hyderabad">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="cap-figure">
+        <img src="http://kalyanchandra.com/wp-content/uploads/2026/07/field_data_collection_100kb.jpg" alt="Field data collection team in Hyderabad">
+        <div class="tag">ON-GROUND FIELD TEAM — TELANGANA</div>
+      </div>
+      <div>
+        <div class="eyebrow">LOCAL DEPTH, NOT JUST LOCAL PRESENCE</div>
+        <h2 style="font-size:1.9rem;">Field teams that know Hyderabad's neighbourhoods, languages, and voting blocs</h2>
+        <p class="lead-text">Our Hyderabad research desk works alongside enumerators trained in Telugu, Urdu, and Hindi, covering both the old city and the new IT corridor with equal rigour.</p>
+        <div class="locality-strip">
+          <span class="locality-chip">HITEC City</span>
+          <span class="locality-chip">Gachibowli</span>
+          <span class="locality-chip">Secunderabad</span>
+          <span class="locality-chip">Old City</span>
+          <span class="locality-chip">Kukatpally</span>
+          <span class="locality-chip">Banjara Hills</span>
+          <span class="locality-chip">LB Nagar</span>
+          <span class="locality-chip">Uppal</span>
+          <span class="locality-chip">Greater Telangana</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="band-navy section-tight">
+  <div class="wrap" style="max-width:820px;text-align:center;">
+    <h2 style="color:#fff;font-size:1.5rem;font-style:italic;font-weight:500;line-height:1.5;">"Insight is never accidental — it's discovered. With the right market research and survey services, we transform opinion into opportunity and data into decisions, for businesses and institutions across Hyderabad and beyond."</h2>
+    <p style="color:var(--amber);margin-top:20px;font-family:'IBM Plex Mono',monospace;font-size:0.85rem;letter-spacing:0.04em;">— KALYAN CHANDRA, MARKET RESEARCH & SURVEY CONSULTANT</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="band-paper">
+  <div class="wrap">
+    <div class="eyebrow">CLIENT OUTCOMES</div>
+    <h2 style="font-size:2rem;margin-bottom:30px;">What Hyderabad clients say</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="quote">"The research gave our leadership team clarity we hadn't had before. It reshaped our go-to-market plan for Hyderabad within weeks."</p>
+        <div class="testi-foot"><strong>Ananya Mehra</strong><span class="stars">★★★★★</span></div>
+      </div>
+      <div class="testi-card">
+        <p class="quote">"What stood out was how well the field team understood the city — the data reflected the real Hyderabad, not a generic national average."</p>
+        <div class="testi-foot"><strong>Ravi Patel</strong><span class="stars">★★★★½</span></div>
+      </div>
+    </div>
+    <div class="rating-banner">
+      <div><div class="big">4.8 / 5</div><div style="font-size:0.85rem;color:#C6D1E3;">Based on 76+ market research studies and surveys across India</div></div>
+      <div style="font-size:0.82rem;color:#AEBBD0;">Feedback collected 2018 – 2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="band-dim" id="insights">
+  <div class="wrap">
+    <div class="eyebrow">📊 RESEARCH, ANALYTICS & STRATEGIC INSIGHTS</div>
+    <h2 style="font-size:2rem;margin-bottom:12px;">Market Research, Survey Analytics & Strategic Insights</h2>
+    <p class="lead-text" style="max-width:700px;margin-bottom:34px;">Perspectives from our Hyderabad and pan-India research practice on turning data into decisions.</p>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <span class="tag2">Growth & Analytics</span>
+        <h4>How Data-Driven Research Improves Lead Generation & Audience Segmentation</h4>
+        <p>How survey analytics and audience segmentation sharpen campaign targeting and long-term business growth in competitive urban markets like Hyderabad.</p>
+      </div>
+      <div class="insight-card">
+        <span class="tag2">Political & Public Opinion</span>
+        <h4>The Role of Survey Research in Campaigns & Public Opinion Analysis</h4>
+        <p>How opinion research supports voter analysis, sentiment tracking, and communication planning across Telangana's political landscape.</p>
+      </div>
+      <div class="insight-card">
+        <span class="tag2">Consumer Behaviour</span>
+        <h4>How Market Research Helps Businesses Understand Consumer Behaviour</h4>
+        <p>How structured surveys and behavioural insight improve targeting, positioning, and operational planning for Hyderabad-based businesses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="band-paper" id="faq">
+  <div class="wrap" style="max-width:800px;">
+    <div class="eyebrow">FAQ</div>
+    <h2 style="font-size:2rem;margin-bottom:20px;">Market Research & Survey — Frequently Asked Questions</h2>
+    <div class="faq-item"><h4>Do you run research specific to Hyderabad and Telangana?</h4><p>Yes. Our field teams are based in Hyderabad and are fluent in Telugu, Urdu, and Hindi, covering both the IT corridor and the old city with equal depth.</p></div>
+    <div class="faq-item"><h4>Who should use these research services?</h4><p>Corporates, SMEs, startups, NGOs, policymakers, political leaders, and institutions operating in or around Hyderabad who need reliable insight for decisions, campaigns, or policy.</p></div>
+    <div class="faq-item"><h4>Do you provide both qualitative and quantitative research?</h4><p>Yes — we combine structured surveys, interviews, focus groups, and on-ground field studies for a complete picture.</p></div>
+    <div class="faq-item"><h4>Can you help with product testing before a Hyderabad launch?</h4><p>Yes. We run concept tests, prototype evaluations, and customer feedback studies to validate fit before scaling.</p></div>
+    <div class="faq-item"><h4>Do you conduct political and social surveys in Telangana?</h4><p>Yes. We run opinion polls, voter behaviour studies, and issue-based research using scientific sampling across Telangana constituencies.</p></div>
+    <div class="faq-item"><h4>How accurate are your results?</h4><p>We rely on scientific sampling, statistical modelling, and field-tested methodology to deliver unbiased, actionable results.</p></div>
+    <div class="faq-item"><h4>How do I get started?</h4><p>Reach out via WhatsApp, phone, or email below — we'll schedule a consultation to understand your objectives and design a tailored research plan.</p></div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="band-dim" style="padding-top:0;padding-bottom:88px;">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h3>Ready to bring evidence into your next Hyderabad decision?</h3>
+        <p>Book a free consultation with our research team — no obligation, just a clear plan.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn-primary" href="tel:+919618106537">Call +91 96181 06537</a>
+        <a class="btn-ghost" href="mailto:info@kalyanchandra.com">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="https://kalyanchandra.com/wp-content/uploads/2024/07/kalyan-chandra.png" alt="Kalyan Chandra Consulting">
+        <p>Political Metrics — market research, survey analytics, and strategic insight services based in Hyderabad, with a second hub in Bangalore.</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:+919618106537">+91 96181 06537</a>
+        <a href="mailto:info@kalyanchandra.com">info@kalyanchandra.com</a>
+        <a href="https://kalyanchandra.com">kalyanchandra.com</a>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="#services">Consumer Research</a>
+        <a href="#services">Brand Perception</a>
+        <a href="#services">Political & Social Surveys</a>
+        <a href="#services">Field & Digital Surveys</a>
+      </div>
+      <div>
+        <h5>WhatsApp</h5>
+        <a href="https://api.whatsapp.com/send?phone=+919618106537&text=Hello%20Kalyan%20Chandra">Chat: +91 96181 06537</a>
+        <p style="margin-top:8px;">Tap to start a conversation about your research needs — replies within business hours.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Political Metrics · Kalyan Chandra Consulting. All rights reserved.</span>
+      <span>Hyderabad · Bangalore</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://api.whatsapp.com/send?phone=+919618106537&text=Hello%20Kalyan%20Chandra%2C%20I%27d%20like%20a%20market%20research%20consultation" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.2 4.9 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3C4 15 3.5 13.5 3.5 12c0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5-3.8 8.5-8.5 8.5z"/></svg>
+</a>
+
+</body>
+</html>
