@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalyan Chandra Consulting | Wikipedia Page Creation Experts, India</title>
+<meta name="description" content="India's trusted Wikipedia page creation and maintenance consultancy for corporates, founders and celebrities. Notability audits, neutral drafting, citation research and ORM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#050f1f;
+    --navy-900:#0b1f3a;
+    --navy-800:#122a4d;
+    --blue-700:#154a8c;
+    --blue-600:#1a5cc4;
+    --blue-500:#2c7be0;
+    --gold-400:#e9a13b;
+    --gold-500:#d6912e;
+    --paper-0:#ffffff;
+    --paper-50:#f6f8fc;
+    --paper-100:#eef2f9;
+    --line:#dde4f0;
+    --slate-600:#51607a;
+    --slate-700:#3a4763;
+    --slate-900:#161f33;
+    --serif: 'Fraunces', 'Source Serif 4', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --radius: 14px;
+    --shadow-soft: 0 20px 50px -25px rgba(11,31,58,0.35);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans);
+    color:var(--slate-700);
+    background:var(--paper-0);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  section{position:relative;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  h1,h2,h3,h4{font-family:var(--serif); color:var(--navy-900); font-weight:600; letter-spacing:-0.01em;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase;
+    font-weight:700; color:var(--gold-400);
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--gold-400); display:inline-block;}
+  .cite{
+    font-size:0.62em; vertical-align:super; color:var(--blue-500); font-weight:700;
+    cursor:pointer; margin-left:1px;
+  }
+  .cite:hover{text-decoration:underline;}
+
+  /* ===== Header ===== */
+  header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(5,15,31,0.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:12px 24px; max-width:1180px; margin:0 auto;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:46px; width:46px; border-radius:50%;}
+  .brand-text{display:flex; flex-direction:column; line-height:1.2;}
+  .brand-text strong{font-family:var(--serif); color:#fff; font-size:1.05rem; font-weight:600;}
+  .brand-text span{font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold-400);}
+  .nav-links{display:flex; gap:26px; font-size:0.88rem; color:#c7d3e8;}
+  .nav-links a:hover{color:#fff;}
+  .nav-cta{display:flex; gap:10px;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:11px 20px; border-radius:100px; font-weight:600; font-size:0.86rem;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap; border:1px solid transparent; cursor:pointer;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-gold{background:var(--gold-400); color:var(--navy-950);}
+  .btn-gold:hover{background:var(--gold-500); box-shadow:0 10px 24px -10px rgba(233,161,59,0.6);}
+  .btn-outline{border-color:rgba(255,255,255,0.3); color:#fff;}
+  .btn-outline:hover{background:rgba(255,255,255,0.08);}
+  .btn-navy{background:var(--navy-900); color:#fff;}
+  .btn-navy:hover{background:var(--navy-800);}
+  .btn-block{width:100%;}
+  .menu-toggle{display:none; background:none; border:none; color:#fff; font-size:1.5rem;}
+
+  /* ===== Hero ===== */
+  .hero{
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(44,123,224,0.35), transparent 60%),
+      radial-gradient(900px 500px at 10% 110%, rgba(233,161,59,0.18), transparent 60%),
+      linear-gradient(180deg, var(--navy-950), var(--navy-900) 60%, var(--navy-900));
+    color:#e9edf6;
+    padding:88px 0 70px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;
+  }
+  .hero h1{
+    color:#fff; font-size:clamp(2.1rem, 4vw, 3.2rem); line-height:1.12; margin:18px 0 22px;
+  }
+  .hero h1 em{font-style:italic; color:var(--gold-400);}
+  .hero p.lead{color:#b9c6de; font-size:1.08rem; max-width:52ch; margin-bottom:32px;}
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:38px;}
+  .trust-strip{
+    display:flex; gap:28px; flex-wrap:wrap; padding-top:26px; border-top:1px solid rgba(255,255,255,0.12);
+  }
+  .trust-item strong{display:block; font-family:var(--serif); font-size:1.5rem; color:#fff;}
+  .trust-item span{font-size:0.78rem; color:#93a3c2;}
+
+  .hero-card{
+    background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.12);
+    border-radius:20px; padding:22px; backdrop-filter:blur(6px);
+  }
+  .hero-card img{border-radius:14px; width:100%; object-fit:cover; aspect-ratio:2/3; object-position:top;}
+  .hero-card .cap{padding-top:14px; text-align:center;}
+  .hero-card .cap strong{color:#fff; font-family:var(--serif); font-size:1.05rem; display:block;}
+  .hero-card .cap span{color:var(--gold-400); font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase;}
+
+  /* ===== Section headings ===== */
+  .section-head{max-width:660px; margin-bottom:44px;}
+  .section-head h2{font-size:clamp(1.6rem, 2.6vw, 2.3rem); margin-top:12px;}
+  .section-head p{color:var(--slate-600); margin-top:14px; font-size:1.02rem;}
+  .pad{padding:88px 0;}
+  .bg-paper{background:var(--paper-50);}
+  .bg-navy{background:var(--navy-900); color:#dbe3f2;}
+  .bg-navy h2, .bg-navy h3{color:#fff;}
+
+  /* ===== Article / Intro ===== */
+  .article-cols{display:grid; grid-template-columns:1fr 1fr; gap:48px;}
+  .article-cols p + p{margin-top:16px;}
+  .drop{font-size:0.95rem;}
+  .pull-note{
+    background:var(--paper-100); border-left:3px solid var(--gold-400);
+    padding:18px 22px; border-radius:0 10px 10px 0; font-family:var(--serif);
+    font-size:1.08rem; color:var(--navy-900); margin-top:24px;
+  }
+
+  /* ===== Process timeline ===== */
+  .timeline{border-left:2px solid var(--line); margin-left:18px; padding-left:36px; display:flex; flex-direction:column; gap:38px;}
+  .tl-step{position:relative;}
+  .tl-step::before{
+    content:attr(data-n); position:absolute; left:-54px; top:-2px;
+    width:36px; height:36px; border-radius:50%; background:var(--navy-900); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:600; font-size:0.95rem;
+    box-shadow:0 0 0 6px var(--paper-50);
+  }
+  .tl-step h4{font-size:1.12rem; margin-bottom:6px;}
+  .tl-step p{color:var(--slate-600); font-size:0.96rem; max-width:60ch;}
+
+  /* ===== Why essential grid ===== */
+  .why-grid{display:grid; grid-template-columns:1fr 1fr; gap:32px;}
+  .why-card{
+    background:var(--paper-0); border:1px solid var(--line); border-radius:var(--radius);
+    padding:32px; box-shadow:var(--shadow-soft);
+  }
+  .why-card .tag{
+    display:inline-block; font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase;
+    font-weight:700; color:var(--blue-600); background:rgba(44,123,224,0.1);
+    padding:5px 12px; border-radius:100px; margin-bottom:16px;
+  }
+  .why-card h3{font-size:1.3rem; margin-bottom:14px;}
+  .why-list{display:flex; flex-direction:column; gap:12px; margin-top:16px;}
+  .why-list li{display:flex; gap:10px; font-size:0.94rem; color:var(--slate-600);}
+  .why-list li::before{content:"—"; color:var(--gold-500); flex-shrink:0; font-weight:700;}
+
+  /* ===== Agencies ===== */
+  .agency-list{display:flex; flex-direction:column; gap:24px;}
+  .agency-card{
+    display:grid; grid-template-columns:64px 1fr auto; gap:22px; align-items:center;
+    background:#fff; border:1px solid var(--line); border-radius:var(--radius);
+    padding:28px 30px; box-shadow:var(--shadow-soft);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .agency-card:hover{transform:translateY(-3px); box-shadow:0 26px 55px -25px rgba(11,31,58,0.4);}
+  .rank-badge{
+    width:56px; height:56px; border-radius:50%; background:var(--navy-900); color:var(--gold-400);
+    font-family:var(--serif); font-weight:700; font-size:1.4rem;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .agency-card.featured{border:1.5px solid var(--gold-400); background:linear-gradient(180deg,#fffdf8,#fff);}
+  .agency-card.featured .rank-badge{background:var(--gold-400); color:var(--navy-950);}
+  .agency-body h3{font-size:1.28rem; margin-bottom:4px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+  .pill{font-size:0.65rem; background:var(--navy-900); color:#fff; padding:3px 10px; border-radius:100px; letter-spacing:0.06em; text-transform:uppercase; font-weight:700;}
+  .pill-gold{background:var(--gold-400); color:var(--navy-950);}
+  .agency-body p{color:var(--slate-600); font-size:0.94rem; margin-top:6px; max-width:60ch;}
+  .agency-body .stars{color:var(--gold-500); font-size:0.9rem; margin-top:8px;}
+  .agency-cta{white-space:nowrap;}
+
+  /* ===== Services w/ images ===== */
+  .service-row{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+  .service-row.reverse .service-media{order:2;}
+  .service-media img{border-radius:18px; box-shadow:var(--shadow-soft); border:1px solid var(--line);}
+  .service-text .eyebrow{margin-bottom:14px;}
+  .service-text h3{font-size:1.7rem; margin-bottom:16px;}
+  .service-text ul{margin-top:18px; display:flex; flex-direction:column; gap:10px;}
+  .service-text li{display:flex; gap:10px; font-size:0.95rem;}
+  .service-text li::before{content:"✓"; color:var(--blue-500); font-weight:800;}
+  .row-gap{display:flex; flex-direction:column; gap:96px;}
+
+  /* ===== Founder ===== */
+  .founder{display:grid; grid-template-columns:0.7fr 1.3fr; gap:48px; align-items:center;}
+  .founder-photo{border-radius:20px; overflow:hidden; box-shadow:var(--shadow-soft); border:1px solid var(--line);}
+  .founder-photo img{aspect-ratio:2/3; object-fit:cover; object-position:top;}
+  .founder-text blockquote{font-family:var(--serif); font-size:1.35rem; color:var(--navy-900); line-height:1.5; font-style:italic;}
+  .founder-text .who{margin-top:20px; display:flex; align-items:center; gap:12px;}
+  .who-dot{width:8px; height:8px; border-radius:50%; background:var(--gold-400);}
+  .who strong{color:var(--navy-900);}
+  .who span{color:var(--slate-600); font-size:0.85rem;}
+
+  /* ===== Testimonials ===== */
+  .test-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:26px;}
+  .test-card{
+    background:#0e2645; border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius);
+    padding:28px; color:#dbe3f2;
+  }
+  .test-stars{color:var(--gold-400); letter-spacing:2px; margin-bottom:14px; font-size:0.95rem;}
+  .test-card p{font-size:0.96rem; color:#c3cfe6;}
+  .test-who{display:flex; align-items:center; gap:12px; margin-top:20px;}
+  .test-avatar{
+    width:42px; height:42px; border-radius:50%; background:var(--blue-600); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-weight:700;
+  }
+  .test-who strong{display:block; color:#fff; font-size:0.9rem;}
+  .test-who span{font-size:0.76rem; color:#93a3c2;}
+
+  /* ===== Ratings ===== */
+  .ratings-wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
+  .score-big{font-family:var(--serif); font-size:5rem; color:var(--navy-900); line-height:1;}
+  .score-stars{color:var(--gold-500); font-size:1.3rem; margin:10px 0;}
+  .score-sub{color:var(--slate-600); font-size:0.92rem;}
+  .bar-row{display:grid; grid-template-columns:40px 1fr 34px; align-items:center; gap:12px; margin-bottom:12px; font-size:0.85rem; color:var(--slate-600);}
+  .bar-track{height:8px; background:var(--paper-100); border-radius:100px; overflow:hidden;}
+  .bar-fill{height:100%; background:linear-gradient(90deg,var(--gold-500),var(--gold-400)); border-radius:100px;}
+  .platform-badges{display:flex; gap:14px; flex-wrap:wrap; margin-top:26px;}
+  .platform-badges span{
+    border:1px solid var(--line); border-radius:100px; padding:8px 16px; font-size:0.82rem; font-weight:600; color:var(--slate-700);
+    display:flex; align-items:center; gap:6px;
+  }
+
+  /* ===== FAQ ===== */
+  .faq-list{display:flex; flex-direction:column; gap:14px; max-width:820px;}
+  .faq-item{border:1px solid var(--line); border-radius:var(--radius); background:#fff; overflow:hidden;}
+  .faq-q{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:20px 24px; cursor:pointer; font-weight:600; color:var(--navy-900); font-size:1rem;
+  }
+  .faq-q .plus{font-size:1.3rem; color:var(--blue-500); transition:transform .2s ease; flex-shrink:0;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease;}
+  .faq-a p{padding:0 24px 22px; color:var(--slate-600); font-size:0.94rem;}
+
+  /* ===== References ===== */
+  .ref-list{font-size:0.82rem; color:var(--slate-600); display:flex; flex-direction:column; gap:6px; max-width:760px;}
+  .ref-list li{display:flex; gap:8px;}
+  .ref-list b{color:var(--navy-900);}
+
+  /* ===== Final CTA ===== */
+  .final-cta{
+    background:linear-gradient(120deg, var(--navy-950), var(--navy-800));
+    border-radius:24px; padding:60px 50px; text-align:center; color:#fff;
+    position:relative; overflow:hidden;
+  }
+  .final-cta::after{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(600px 300px at 90% 0%, rgba(233,161,59,0.25), transparent 60%);
+  }
+  .final-cta h2{color:#fff; font-size:clamp(1.6rem,3vw,2.2rem);}
+  .final-cta p{color:#b9c6de; max-width:52ch; margin:14px auto 30px;}
+  .final-ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative; z-index:1;}
+
+  /* ===== Footer ===== */
+  footer{background:var(--navy-950); color:#93a3c2; padding:60px 0 30px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.08);}
+  .footer-brand{display:flex; align-items:center; gap:12px; margin-bottom:14px;}
+  .footer-brand img{height:44px; width:44px; border-radius:50%;}
+  .footer-brand strong{color:#fff; font-family:var(--serif);}
+  footer h5{color:#fff; font-size:0.85rem; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:16px;}
+  footer ul{display:flex; flex-direction:column; gap:10px; font-size:0.88rem;}
+  footer ul a:hover{color:#fff;}
+  .foot-bottom{display:flex; justify-content:space-between; padding-top:26px; font-size:0.8rem; flex-wrap:wrap; gap:10px;}
+
+  /* ===== WhatsApp floating ===== */
+  .float-wa{
+    position:fixed; right:22px; bottom:22px; z-index:200;
+    background:#20b358; color:#fff; width:58px; height:58px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 14px 30px -10px rgba(32,179,88,0.6);
+  }
+  .float-wa svg{width:28px; height:28px;}
+
+  /* ===== Responsive ===== */
+  @media (max-width:960px){
+    .hero-grid, .article-cols, .why-grid, .test-grid, .ratings-wrap, .founder, .service-row, .footer-grid{
+      grid-template-columns:1fr;
+    }
+    .service-row.reverse .service-media{order:0;}
+    .nav-links{display:none;}
+    .menu-toggle{display:block;}
+    .agency-card{grid-template-columns:48px 1fr; }
+    .agency-cta{grid-column:1/-1;}
+    .hero{padding:64px 0 50px;}
+    .pad{padding:60px 0;}
+    .final-cta{padding:44px 24px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="https://kalyanchandra.com/wikipedia-page-creator-service-in-india/">
+      <img src="https://kalyanchandra.com/wp-content/uploads/2024/07/kalyan-chandra.png" alt="Kalyan Chandra Consulting logo">
+      <span class="brand-text">
+        <strong>Kalyan Chandra</strong>
+        <span>Consulting</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#agencies">Top Agencies</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQs</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="tel:+919618106537">Call</a>
+      <a class="btn btn-gold" href="https://wa.me/919618106537" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Wikipedia Page Creation · India</span>
+      <h1>Get a Wikipedia page that survives <em>scrutiny</em>, not just review.</h1>
+      <p class="lead">Kalyan Chandra Consulting researches, drafts and defends Wikipedia articles for founders, corporates and public figures — built on notability, neutrality and verifiable sourcing from day one.<span class="cite" onclick="document.getElementById('ref-1').scrollIntoView()">[1]</span></p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://wa.me/919618106537" target="_blank" rel="noopener">Chat on WhatsApp — 96181 06537</a>
+        <a class="btn btn-outline" href="mailto:info@kalyanchandra.com">info@kalyanchandra.com</a>
+      </div>
+      <div class="trust-strip">
+        <div class="trust-item"><strong>500+</strong><span>Pages researched &amp; drafted</span></div>
+        <div class="trust-item"><strong>98%</strong><span>Notability-audit pass rate<span class="cite" onclick="document.getElementById('ref-2').scrollIntoView()">[2]</span></span></div>
+        <div class="trust-item"><strong>4.9★</strong><span>Average client rating</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="https://kalyanchandra.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-10-at-11.46.06-1000x1500.jpeg" alt="Kalyan Chandra, Wikipedia consultant">
+      <div class="cap">
+        <strong>Kalyan Chandra</strong>
+        <span>Lead Consultant &amp; Editor Liaison</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO ARTICLE ===== -->
+<section class="pad" id="intro">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Complete Guide</span>
+      <h2>What is a Wikipedia page creation service, and why does India need specialised agencies for it?</h2>
+    </div>
+    <div class="article-cols">
+      <div class="drop">
+        <p>A Wikipedia page creation service is a professional consulting engagement that takes a person, brand or organisation through the entire lifecycle of getting an article published on Wikipedia — from an honest notability assessment, through source research and neutral drafting, to navigating the submission queue and defending the page after it goes live.</p>
+        <p>Unlike a typical content or PR project, a Wikipedia article cannot simply be "published" by the subject or their team. Every edit is reviewed against community-written policies — notability, verifiability, neutral point of view and conflict-of-interest disclosure — by volunteer editors who have no obligation to approve anything that reads like marketing.</p>
+        <p>This is exactly where a specialised agency earns its fee. It is not writing a nicer biography; it is translating a subject's real-world achievements into the specific evidentiary format Wikipedia's editors expect, while staying fully transparent about who commissioned the work.</p>
+      </div>
+      <div class="drop">
+        <p>India's Wikipedia ecosystem has matured quickly over the last decade. As more founders, executives, authors, doctors and performers have sought a presence on the platform, a small set of agencies has developed genuine expertise in Indian sourcing — regional-language press, industry bodies, court and government records — that generalist overseas agencies often miss.</p>
+        <p>That regional fluency matters because Wikipedia's notability guidelines lean heavily on "significant coverage in independent, reliable sources." An agency that understands which Indian publications count as reliable, and which are paid placements in disguise, is the difference between an article that survives and one that gets tagged for deletion within weeks.</p>
+        <div class="pull-note">"The article isn't the deliverable — the sourcing behind it is. Everything else is presentation."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="pad bg-paper" id="how-it-works">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Process</span>
+      <h2>How a Wikipedia page creation agency actually works</h2>
+      <p>The steps below are the standard workflow reputable Indian agencies follow — in this order, because skipping ahead is usually why articles get deleted.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-step" data-n="1">
+        <h4>Notability audit</h4>
+        <p>Before any writing begins, the agency checks whether independent, reliable sources already cover the subject in enough depth to meet Wikipedia's notability bar. If the coverage isn't there yet, a credible agency will say so, rather than take the fee and draft an article destined for deletion.</p>
+      </div>
+      <div class="tl-step" data-n="2">
+        <h4>Source research &amp; documentation</h4>
+        <p>Researchers compile press coverage, interviews, award citations, regulatory filings and industry recognitions into a source list, screening out press releases, paid articles and self-published content that Wikipedia editors will reject.</p>
+      </div>
+      <div class="tl-step" data-n="3">
+        <h4>Neutral drafting</h4>
+        <p>The article is written in Wikipedia's encyclopaedic tone — third person, neutral point of view, no promotional language — structured around the subject's career, contributions and independently verified milestones.</p>
+      </div>
+      <div class="tl-step" data-n="4">
+        <h4>Citation mapping</h4>
+        <p>Every factual claim is mapped to an inline citation using Wikipedia's referencing format, so reviewers can verify each statement without needing to ask.</p>
+      </div>
+      <div class="tl-step" data-n="5">
+        <h4>Disclosure &amp; submission</h4>
+        <p>The draft is submitted through the appropriate channel with a transparent paid-editing disclosure, as required by Wikipedia's Terms of Use, and then tracked through the volunteer review queue.</p>
+      </div>
+      <div class="tl-step" data-n="6">
+        <h4>Review response &amp; ongoing maintenance</h4>
+        <p>Reviewer feedback is addressed point by point. After publication, the agency monitors the page for vandalism, outdated information or deletion nominations, and keeps it updated as the subject's career progresses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ESSENTIAL ===== -->
+<section class="pad" id="why-essential">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why It Matters</span>
+      <h2>Why expert agencies are essential for corporates and celebrities</h2>
+      <p>Attempting a Wikipedia page without specialist support is one of the most common ways corporate and celebrity subjects end up with a deleted article or, worse, an unflattering one written by someone else.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="tag">For Corporate Companies</span>
+        <h3>Reputation infrastructure, not vanity content</h3>
+        <p>For a company, a Wikipedia article functions like a piece of due-diligence infrastructure — it's often the first neutral-seeming source investors, journalists and enterprise clients check.</p>
+        <ul class="why-list">
+          <li>Navigating strict conflict-of-interest disclosure rules that apply to any paid or employee-authored edit</li>
+          <li>Sourcing claims to independent business press rather than press releases or company blogs, which editors routinely reject</li>
+          <li>Avoiding language patterns that read as promotional and trigger fast-track deletion tags</li>
+          <li>Structuring the article to survive scrutiny from competitors or activist editors who monitor corporate pages</li>
+        </ul>
+      </div>
+      <div class="why-card">
+        <span class="tag">For Celebrities &amp; Public Figures</span>
+        <h3>Protecting a narrative you don't fully control</h3>
+        <p>Once a public figure is notable enough for Wikipedia, someone will eventually create a page for them — the only real choice is whether it starts accurate or has to be corrected later.</p>
+        <ul class="why-list">
+          <li>Getting the factual foundation right the first time, before inaccurate or hostile edits take root</li>
+          <li>Compiling verifiable coverage of achievements, filmography, awards or public work into proper citations</li>
+          <li>Responding correctly to vandalism, biased edits or coordinated deletion attempts after launch</li>
+          <li>Keeping biographical details, career updates and awards current as the subject's public profile grows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TOP AGENCIES ===== -->
+<section class="pad bg-paper" id="agencies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Ranked</span>
+      <h2>Top Wikipedia page creation agencies in India</h2>
+      <p>A shortlist of specialist consultancies actually known for notability-first work and transparent, disclosed editing — rather than guaranteed publishing promises no legitimate agency can honestly make.</p>
+    </div>
+    <div class="agency-list">
+      <div class="agency-card featured">
+        <div class="rank-badge">1</div>
+        <div class="agency-body">
+          <h3>Kalyan Chandra Consulting <span class="pill pill-gold">Corporates &amp; Public Figures</span></h3>
+          <p>India-based consultancy handling end-to-end Wikipedia page creation, notability audits, citation research and long-term maintenance for founders, executives, doctors, authors and entertainers.</p>
+          <div class="stars">★★★★★ <span style="color:var(--slate-600); font-weight:500;">4.9/5 · Full-service &amp; maintenance</span></div>
+        </div>
+        <a class="btn btn-navy agency-cta" href="https://kalyanchandra.com/wikipedia-page-creator-service-in-india/" target="_blank" rel="noopener">Visit Service Page →</a>
+      </div>
+      <div class="agency-card">
+        <div class="rank-badge">2</div>
+        <div class="agency-body">
+          <h3>Political Metrics <span class="pill">Politicians &amp; Social Activists</span></h3>
+          <p>A specialist consultancy focused on Wikipedia page creation for politicians, policy figures and social activists, with sourcing built around civic, government and news-media coverage.</p>
+          <div class="stars">★★★★☆ <span style="color:var(--slate-600); font-weight:500;">Niche specialist · Political &amp; civic sector</span></div>
+        </div>
+        <a class="btn btn-outline agency-cta" style="color:var(--navy-900); border-color:var(--line);" href="https://politicalmetrics.in/wikipedia-page-creation-politicians/" target="_blank" rel="noopener">Visit Website →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="pad" id="services">
+  <div class="wrap row-gap">
+    <div class="service-row">
+      <div class="service-media">
+        <img src="https://kalyanchandra.com/wp-content/uploads/2024/09/wikipedia-maintainance-service.webp" alt="Wikipedia page maintenance service">
+      </div>
+      <div class="service-text">
+        <span class="eyebrow">Ongoing Support</span>
+        <h3>Wikipedia page maintenance</h3>
+        <p>A published article is not the finish line. Community edits, outdated facts and undisclosed rewrites can quietly change a page's tone within months of going live.</p>
+        <ul>
+          <li>Continuous monitoring for unauthorised or inaccurate edits</li>
+          <li>Scheduled updates for new roles, awards and milestones</li>
+          <li>Fast, policy-compliant response to vandalism or bias</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-row reverse">
+      <div class="service-media">
+        <img src="https://kalyanchandra.com/wp-content/uploads/2024/06/Wikipedia-orm.webp" alt="Wikipedia online reputation management">
+      </div>
+      <div class="service-text">
+        <span class="eyebrow">Reputation Management</span>
+        <h3>Wikipedia ORM (Online Reputation Management)</h3>
+        <p>Because Wikipedia articles routinely surface at the top of search results, they carry outsized weight in how a person or company is perceived — which is exactly why they attract negative or coordinated editing.</p>
+        <ul>
+          <li>Correcting factually inaccurate or defamatory content through proper channels</li>
+          <li>Escalating disputes through Wikipedia's talk-page and administrator processes</li>
+          <li>Aligning the article with the subject's current, verifiable public record</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOUNDER ===== -->
+<section class="pad bg-paper">
+  <div class="wrap founder">
+    <div class="founder-photo">
+      <img src="https://kalyanchandra.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-10-at-11.46.06-1000x1500.jpeg" alt="Kalyan Chandra">
+    </div>
+    <div class="founder-text">
+      <span class="eyebrow">Led By</span>
+      <blockquote>"Our job isn't to get a page approved once — it's to make sure it still looks accurate and neutral two years later, when nobody's watching it."</blockquote>
+      <div class="who">
+        <span class="who-dot"></span>
+        <div>
+          <strong>Kalyan Chandra</strong>
+          <span>Founder, Kalyan Chandra Consulting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="pad bg-navy" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--gold-400);">Client Feedback</span>
+      <h2>What clients say after their page goes live</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"They told us upfront our startup wasn't notable enough yet — and gave us a roadmap to get there. Six months later, the page went live on the first submission."</p>
+        <div class="test-who">
+          <div class="test-avatar">R</div>
+          <div><strong>Founder, SaaS Company</strong><span>Bengaluru</span></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"The citation research alone would have taken our internal team weeks. Every source they used was something a reviewer could actually verify."</p>
+        <div class="test-who">
+          <div class="test-avatar">M</div>
+          <div><strong>Corporate Communications Head</strong><span>Mumbai</span></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"My page had been vandalised twice before I found this team. They cleaned it up properly through Wikipedia's own process and it's been stable since."</p>
+        <div class="test-who">
+          <div class="test-avatar">S</div>
+          <div><strong>Film Actor's Manager</strong><span>Hyderabad</span></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"What I appreciated most was the honesty. No promises of guaranteed approval, just a clear, disclosed process from start to finish."</p>
+        <div class="test-who">
+          <div class="test-avatar">A</div>
+          <div><strong>Author &amp; Speaker</strong><span>Delhi NCR</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RATINGS ===== -->
+<section class="pad" id="ratings">
+  <div class="wrap ratings-wrap">
+    <div>
+      <div class="score-big">4.9</div>
+      <div class="score-stars">★★★★★</div>
+      <p class="score-sub">Based on 300+ verified client engagements across corporate, healthcare, entertainment and author profiles.</p>
+    </div>
+    <div>
+      <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>88%</span></div>
+      <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span>9%</span></div>
+      <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+      <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span>1%</span></div>
+      <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+      <div class="platform-badges">
+        <span>★ Google Reviews</span>
+        <span>★ JustDial</span>
+        <span>★ Sulekha</span>
+        <span>★ Client Testimonials</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="pad bg-paper" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>Can you guarantee my Wikipedia page will get approved?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>No honest agency can guarantee approval — Wikipedia is reviewed by independent volunteer editors, not by us. What we guarantee is a rigorous notability audit up front, and a properly sourced, policy-compliant draft that gives your page the best realistic chance.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>How long does the process usually take?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Research and drafting typically take 2–4 weeks depending on how much independent coverage already exists. Review timelines are set by Wikipedia's volunteer queue and can range from a few weeks to a few months.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>What if I don't have enough press coverage yet?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>We'll tell you honestly if you're not there yet, and outline what kind of independent coverage would help you meet notability guidelines before attempting a submission.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>Is paid Wikipedia editing allowed?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes, provided it is disclosed. Wikipedia's Terms of Use require paid contributors to declare their involvement, which we do transparently on every project.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>Do you handle celebrities and politicians as well as companies?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>We work with corporates, founders, doctors, authors and entertainers. For politicians and social activists, we typically point clients to specialists like Political Metrics, whose sourcing focus is built specifically around civic and political coverage.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)"><span>What happens if my page gets vandalised or flagged for deletion?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Our maintenance service monitors the page continuously and responds through Wikipedia's own dispute and review channels — never by making undisclosed edits that could violate policy.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REFERENCES (signature nod to Wikipedia citation style) ===== -->
+<section class="pad" style="padding-top:0;">
+  <div class="wrap">
+    <h4 style="font-size:0.95rem; margin-bottom:14px; color:var(--navy-900);">References</h4>
+    <ul class="ref-list">
+      <li id="ref-1"><b>[1]</b> Based on Kalyan Chandra Consulting's documented project workflow: notability audit, sourcing, neutral drafting, citation mapping and disclosed submission.</li>
+      <li id="ref-2"><b>[2]</b> Internal figure reflecting the share of audited, agency-recommended articles that proceeded to a successful first-round or early-revision submission.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="wrap" style="padding-bottom:90px;">
+  <div class="final-cta">
+    <span class="eyebrow" style="color:var(--gold-400);">Let's Talk</span>
+    <h2>Ready to see if your Wikipedia page is realistic?</h2>
+    <p>Start with a free notability check. We'll tell you plainly whether you're ready, and what it would take if you're not.</p>
+    <div class="final-ctas">
+      <a class="btn btn-gold" href="https://wa.me/919618106537" target="_blank" rel="noopener">WhatsApp: 96181 06537</a>
+      <a class="btn btn-outline" href="tel:+919618106537">Call Now</a>
+      <a class="btn btn-outline" href="mailto:info@kalyanchandra.com">info@kalyanchandra.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="https://kalyanchandra.com/wp-content/uploads/2024/07/kalyan-chandra.png" alt="Kalyan Chandra Consulting logo">
+          <strong>Kalyan Chandra Consulting</strong>
+        </div>
+        <p style="max-width:38ch; font-size:0.9rem;">Notability-first Wikipedia page creation, editing and maintenance for corporates, founders and public figures across India.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#agencies">Top Agencies</a></li>
+          <li><a href="#services">Maintenance &amp; ORM</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+919618106537">+91 96181 06537</a></li>
+          <li><a href="https://wa.me/919618106537" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          <li><a href="mailto:info@kalyanchandra.com">info@kalyanchandra.com</a></li>
+          <li><a href="https://kalyanchandra.com/wikipedia-page-creator-service-in-india/" target="_blank" rel="noopener">kalyanchandra.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Kalyan Chandra Consulting. All rights reserved.</span>
+      <span>Wikipedia® is a registered trademark of the Wikimedia Foundation. This service is independent and not affiliated with Wikimedia.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/919618106537" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.7 6.3L4 29l7.9-1.7c1.8.9 3.9 1.4 6.1 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.7 1 1-4.6-.2-.4C5.5 17.6 5 16.3 5 15c0-6 4.9-11 11-11s11 5 11 11-4.9 10.8-11 10.8zm6-8.3c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+  function toggleFaq(el){
+    const item = el.parentElement;
+    const answer = item.querySelector('.faq-a');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o=>{
+      if(o!==item){ o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null; }
+    });
+    if(isOpen){
+      item.classList.remove('open');
+      answer.style.maxHeight = null;
+    } else {
+      item.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  }
+</script>
+
+  <!-- Default Statcounter code for Kalyan Github
+https://kalyan131.github.io/bl/ -->
+<script type="text/javascript">
+var sc_project=13147993; 
+var sc_invisible=1; 
+var sc_security="fa0aacf5"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13147993/0/fa0aacf5/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
